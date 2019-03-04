@@ -1,3 +1,3 @@
 class Model:
-    def __int__(self):
+    def __init__(self):
         print("model")

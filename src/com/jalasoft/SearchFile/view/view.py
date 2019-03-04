@@ -1,6 +1,6 @@
 class View:
 
-    def __int__(self):
+    def __init__(self):
         print('view')
 
     def initUI(self):
