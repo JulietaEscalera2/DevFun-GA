@@ -1,13 +1,13 @@
 import unittest
 
-from src.com.jalasoft.SearchFile.controller.validator import Validator,
+from src.com.jalasoft.SearchFile.controller.validator import Validator
 
 class ValidatorTest(unittest.TestCase):
     def test_pathData(self):
-        path = 'C:\Users\hp\Documents\cartas'
+        list = 'C:\\Users\\hp\Documents\cartas'
         path_correct = Validator(list_SearchFile)
-        expected = path_correct.read_list('C:\Users\hp\Documents\python-fundamentals')
-        actual = path_correct.read_list('C:\Users\hp\Documents\cartas'
+        expected = path_correct.read_list("C:\\Users\\hp\\Documents\\python-fundamentals")
+        actual = path_correct.read_list('C:Users\hp\Documents\cartas')
         self.assertEqual(expected, actual)
 
     def test_pathName(self):
