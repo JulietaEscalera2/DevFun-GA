@@ -28,3 +28,4 @@ class View(QMainWindow):
     def __getProductView(self):
         proView = ProductView()
         return proView
+
