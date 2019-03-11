@@ -28,3 +28,17 @@ class View(QMainWindow):
     def __getProductView(self):
         proView = ProductView()
         return proView
+
+    '''
+    print("Escriba la lista de ciudades de la siguiente forma:")
+    print("Ciudad origen | Ciudad destino | Ruta | Distancia")
+
+    lista = []
+    while True:
+        inputs = input()
+        if inputs:
+            lista.append(inputs)
+        else:
+            break
+    print(lista)
+    '''
