@@ -1,59 +1,119 @@
-from importlib.abc import Finder
-import os
-import time
 import sys, os
-import os, fnmatch
+from src.com.jalasoft.SearchFile.model.file import File
+
 
 class Model:
 
+    def __init__(self,name_file,path_file, file_type, file_size):
+        self.__name_file__ = name_file
+        self.__path_file__ = path_file
+        self.__file_type__ = file_type
+        self.__file_size__ = file_size
 
-    def __init__(self):
-        print("model")
-
-    # This will find all matches:
-    def search_all(name,path):
+    # This will find all matches by file name and path:
+    def search_all(self):
+        path = self.__path_file__
+        name = self.__name_file__
         total = 0
         result = []
-        if (len(sys.argv) > 1):
-            if (not os.path.isdir(sys.argv[1])):
+        if len(sys.argv) > 1:
+            if not os.path.isdir(sys.argv[1]):
                 print(sys.argv[1], "Wrong path. Please review")
                 sys.exit(1)
                 path = sys.argv[1]
 
         for root, dir, files in os.walk(path):
             for file in files:
-                if (name in file.lower()):
-                    print(root + "\\" + file)
+                if name in file.lower():
+                    print(os.path.join(root, file))
                     total += 1
-                    # result.append([root, file])
-                    filesize = os.path.getsize(root + "\\" + file)
-                    filetime = os.path.getmtime(root + "\\" + file)
-                    print(filesize)
-                    result.append([root, file, filesize, time.ctime(filetime)])
+                    file_object = File(file,root)
+                    file_size = file_object.get_size_kb()
+                    file_time = file_object.get_creation_date()
+                    file_type = file_object.get_file_type()
+                    result.append([root, file, file_size, file_time,file_type])
 
-        print("In total there are", total, " files with", name, "in", path)
+        print("In total there are", total, " files with filename:", name, ",in the path:", path)
         return result
 
-    # This will find the first match:
-    def search(name, path):
+    # This will return the first match found:
+    def search(self):
+        path = self.__path_file__
+        name = self.__name_file__
         total = 0
         result = []
-        if (len(sys.argv) > 1):
-            if (not os.path.isdir(sys.argv[1])):
+        if len(sys.argv) > 1:
+            if not os.path.isdir(sys.argv[1]):
                 print(sys.argv[1], "Wrong path. Please review")
                 sys.exit(1)
                 path = sys.argv[1]
 
         for root, dir, files in os.walk(path):
             for file in files:
-                if (name in file.lower()):
-                    print(root + "\\" + file)
-                    filesize = os.path.getsize(root + "\\" + file)
-                    filetime = os.path.getmtime(root + "\\" + file)
-                    return result.append([root, file,filesize,filetime])
+                if name in file.lower():
+                    print(os.path.join(root, file))
+                    file_object = File(file, root)
+                    file_size = file_object.get_size_kb()
+                    file_time = file_object.get_creation_date()
+                    file_type = file_object.get_file_type()
+                    result.append([root, file, file_size, file_time, file_type])
+                    break
 
         print("In total there are", total, " files with", name, "in", path)
         return result
-    file_found = search_all('environment', 'G:\\')
-    print("************")
-    print(file_found)
+
+    # Search by file type/ext and path
+    def search_by_type(self):
+        path = self.__path_file__
+        type = self.__file_type__
+        total = 0
+        result = []
+        if len(sys.argv) > 1:
+            if not os.path.isdir(sys.argv[1]):
+                print(sys.argv[1], "Wrong path. Please review")
+                sys.exit(1)
+                path = sys.argv[1]
+
+        for root, dirs, files in os.walk(path):
+            for file in files:
+                if file.endswith(type):
+                    print(os.path.join(root, file))
+                    total += 1
+                    file_object = File(file, root)
+                    file_size = file_object.get_size_kb()
+                    file_time = file_object.get_creation_date()
+                    file_type = file_object.get_file_type()
+                    result.append([root, file, file_size, file_time, file_type])
+
+        print("In total there are", total, " files with", type, "in", path)
+        return result
+
+    # Search by file size and path
+    def search_by_size(self):
+        path = self.__path_file__
+        size = self.__file_size__
+        total = 0
+        result = []
+        for root, dirs, files in os.walk(path):
+            for file in files:
+                file_object = File(file, root)
+                if os.stat(file_object.get_file_in_path()).st_size == size:
+                    print(os.path.join(root, file))
+                    total += 1
+
+                    file_size = file_object.get_size_kb()
+                    file_time = file_object.get_creation_date()
+                    file_type = file_object.get_file_type()
+                    result.append([root, file, file_size, file_time, file_type])
+
+        print("In total there are", total, " files with", size, "in", path)
+        return result
+
+
+
+# main
+# model should receive ['File name', 'file path','Ext/type','file creation date', 'File size']
+fit= Model('laura', 'D:\\','.avi','6236311')
+file_found = fit.search_by_size()
+print("************")
+print(file_found)
