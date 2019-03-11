@@ -19,7 +19,6 @@ class ProductView(QWidget):
         form.addRow(QLabel("Ext"),QLineEdit())
         group.setLayout(form)
 
-
         buttons = QPushButton("Search")
         table = QTableWidget()
         table.setColumnCount(3)
