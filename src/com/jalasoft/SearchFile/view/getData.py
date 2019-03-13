@@ -8,6 +8,6 @@ class Data:
     def get_extension(self):
         pass
     def get_date_creation(self):
-        ...
+        pass
     def get_file_size(self):
-        ...
+        pass

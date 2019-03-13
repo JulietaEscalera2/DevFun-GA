@@ -1,8 +1,11 @@
+from src.com.jalasoft.SearchFile.controller.objectParameters import ObjectParameters
 
 
-class ParametersKeys:
-    def __init__(self):
-        pass
+class ParametersKeys(ObjectParameters):
 
     def getkeys(self):
-        pass
+        key_path = searchParameters['Path']
+        key_filename = searchParameters['Filename']
+        key_extension = searchParameters['Extension']
+        key_datecreation = searchParameters['DateCreation']
+        key_size = searchParameters['Size']
