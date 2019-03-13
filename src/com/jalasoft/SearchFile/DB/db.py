@@ -1,3 +1,7 @@
+import os
+import sqlite3
+
+
 class ConnectionDB:
     dataBaseName = "search.db"
 
