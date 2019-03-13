@@ -14,7 +14,8 @@ class ObjectParameters:
             'DateCreation':'',
             'Size':''
         }
-        searchParameters['Path'] = get_path_file()
+        #searchParameters['Path'] = get_path_file()
+        searchParameters['Path'] = 'Documents'
         searchParameters['Filename'] = get_file_name()
         searchParameters['Extension'] = get_extension()
         searchParameters['DateCreation'] = get_date_creation()
