@@ -10,18 +10,35 @@ class Model:
         self.__file_type__ = file_type
         self.__file_size__ = file_size
 
+
+    def search_criteria(self):
+        path = self.__path_file__
+        name = self.__name_file__
+        ext = self.__file_type__
+        total = 0
+        result = []
+
+        for root, dir, files in os.walk(path):
+            for file in files:
+                file_object = File(file, root)
+                if name!= " " and name!= file_object.get_file_name():
+                    print(name)
+                    print(file_object.get_file_name())
+                    continue
+                if ext!= " " and ext!= file_object.get_file_type():
+                    print(ext)
+                    print(file_object.get_file_type())
+                    continue
+                result.append([root, file, ext])
+        return result
+
+
     # This will find all matches by file name and path:
     def search_all(self):
         path = self.__path_file__
         name = self.__name_file__
         total = 0
         result = []
-        if len(sys.argv) > 1:
-            if not os.path.isdir(sys.argv[1]):
-                print(sys.argv[1], "Wrong path. Please review")
-                sys.exit(1)
-                path = sys.argv[1]
-
         for root, dir, files in os.walk(path):
             for file in files:
                 if name in file.lower():
@@ -42,11 +59,6 @@ class Model:
         name = self.__name_file__
         total = 0
         result = []
-        if len(sys.argv) > 1:
-            if not os.path.isdir(sys.argv[1]):
-                print(sys.argv[1], "Wrong path. Please review")
-                sys.exit(1)
-                path = sys.argv[1]
 
         for root, dir, files in os.walk(path):
             for file in files:
@@ -68,11 +80,6 @@ class Model:
         type = self.__file_type__
         total = 0
         result = []
-        if len(sys.argv) > 1:
-            if not os.path.isdir(sys.argv[1]):
-                print(sys.argv[1], "Wrong path. Please review")
-                sys.exit(1)
-                path = sys.argv[1]
 
         for root, dirs, files in os.walk(path):
             for file in files:
@@ -114,6 +121,6 @@ class Model:
 # main
 # model should receive ['File name', 'file path','Ext/type','file creation date', 'File size']
 fit= Model('laura', 'D:\\','.avi','6236311')
-file_found = fit.search_by_size()
+file_found = fit.search_criteria()
 print("************")
 print(file_found)
