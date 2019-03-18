@@ -39,3 +39,12 @@ class Validator(ParametersKeys):
         if ObjectParameters.key_extension == 'NULL': list_model[2] == 'NULL'
         if ObjectParameters.key_datecreation == 'NULL': list_model[3] == 'NULL'
         if ObjectParameters.key_size == 'NULL': list_model[4] == 'NULL'
+
+    def searchCriteria(self):
+        path = ObjectParameters.key_path()
+        filename = ObjectParameters.key_filename()
+        size = ObjectParameters.key_size()
+        dateCreation = ObjectParameters.key_datecreation()
+        extension = ObjectParameters.key_extension()
+
+
