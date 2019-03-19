@@ -4,11 +4,6 @@ from src.com.jalasoft.SearchFile.controller.keysparameters import ObjectParamete
 
 class Validator(ParametersKeys):
 
-    #https://codingornot.com/08-python-validar-entradas-ejemplos
-    # https://uniwebsidad.com/libros/python/capitulo-6/metodos-de-validacion
-    #https://uniwebsidad.com/libros/python/capitulo-10/modulos-de-sistema
-    #lista = ['C:\Users\hp\Documents\python-fundamentals','python-fundamentals',0,0]#path,namefile,extension,tamanofile
-
     def read_list(list_SearchFile):
         list_model = []
         if os.path.isdir(ObjectParameters.key_path):
