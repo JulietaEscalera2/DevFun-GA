@@ -22,12 +22,15 @@ class Validator(ParametersKeys):
             return True
         else:
             return False
+        '''
+        // comment this lines until view has them
         if ObjectParameters.key_size.isdigit():
             return True
         if not ObjectParameters.key_size.isdigit():
             return f'Please input only numbers'
         if ObjectParameters.key_datecreation.isalnum():
             return True
+        '''
         if ObjectParameters.key_extension.os.extsep():
             return True
         if ObjectParameters.key_path == 'NULL':
@@ -37,14 +40,12 @@ class Validator(ParametersKeys):
             ObjectParameters.key_filename == "NULL"
             #list_model[1] == 'NULL'
         if ObjectParameters.key_extension == 'NULL': list_model[2] == 'NULL'
+        '''
+                // comment this lines until view has them
         if ObjectParameters.key_datecreation == 'NULL': list_model[3] == 'NULL'
         if ObjectParameters.key_size == 'NULL': list_model[4] == 'NULL'
+        '''
 
-    def searchCriteria(self):
-        path = ObjectParameters.key_path()
-        filename = ObjectParameters.key_filename()
-        size = ObjectParameters.key_size()
-        dateCreation = ObjectParameters.key_datecreation()
-        extension = ObjectParameters.key_extension()
+
 
 

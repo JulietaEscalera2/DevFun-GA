@@ -1,7 +1,7 @@
 
 
 from src.com.jalasoft.SearchFile.view.getData import Data
-
+from src.com.jalasoft.SearchFile.view.productView import ProductView
 class ObjectParameters:
     def __init__(self):
         pass
@@ -14,12 +14,12 @@ class ObjectParameters:
             'DateCreation':'',
             'Size':''
         }
-        searchParameters['Path'] = get_path_file()
-        # searchParameters['Path'] = 'Documents'
-        searchParameters['Filename'] = get_file_name()
-        searchParameters['Extension'] = get_extension()
-        searchParameters['DateCreation'] = get_date_creation()
-        searchParameters['Size'] = get_file_size()
+        searchParameters['Path'] = ProductView.getPath()
+        # searchParameters['Path'] = 'Documents' #this is only an example
+        searchParameters['Filename'] = ProductView.getFileName()
+        searchParameters['Extension'] = ProductView.getExtention()
+        #searchParameters['DateCreation'] = get_date_creation() // comment this lines until view has them
+        #searchParameters['Size'] = get_file_size()
         return searchParameters
     # print(parameters)
 
