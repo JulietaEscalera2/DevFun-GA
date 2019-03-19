@@ -1,35 +1,31 @@
-import sys, os
+import os
 from src.com.jalasoft.SearchFile.model.file import File
 
 
-class Model:
+class Model():
 
-    def __init__(self,name_file,path_file, file_type, file_size):
-        self.__name_file__ = name_file
-        self.__path_file__ = path_file
-        self.__file_type__ = file_type
-        self.__file_size__ = file_size
-
+    def __init__(self, objectParameters):
+        self.objectParameters = objectParameters
+        print(objectParameters['Filename'])
+        self.__name_file__ = self.objectParameters['Filename']
+        self.__path_file__ = self.objectParameters['Path']
+        self.__file_type__ = self.objectParameters['Extension']
+        self.__file_size__ = self.objectParameters['Size']
+        self.__file_creation_date__ = self.objectParameters['DateCreation']
 
     def search_criteria(self):
-        path = self.__path_file__
-        name = self.__name_file__
-        ext = self.__file_type__
-        total = 0
         result = []
 
-        for root, dir, files in os.walk(path):
+        for root, dir, files in os.walk(self.__path_file__):
             for file in files:
-                file_object = File(file, root)
-                if name!= " " and name!= file_object.get_file_name():
-                    print(name)
-                    print(file_object.get_file_name())
+                if self.__name_file__!= " " and self.__name_file__ not in file.lower():
                     continue
-                if ext!= " " and ext!= file_object.get_file_type():
-                    print(ext)
-                    print(file_object.get_file_type())
+                if self.__file_type__!= " " and not file.endswith(self.__file_type__):
                     continue
-                result.append([root, file, ext])
+                print("add to list")
+                print(self.__file_type__)
+                print(file)
+                result.append([root, file, self.__file_type__, self.__file_size__])
         return result
 
 
@@ -51,27 +47,6 @@ class Model:
                     result.append([root, file, file_size, file_time,file_type])
 
         print("In total there are", total, " files with filename:", name, ",in the path:", path)
-        return result
-
-    # This will return the first match found:
-    def search(self):
-        path = self.__path_file__
-        name = self.__name_file__
-        total = 0
-        result = []
-
-        for root, dir, files in os.walk(path):
-            for file in files:
-                if name in file.lower():
-                    print(os.path.join(root, file))
-                    file_object = File(file, root)
-                    file_size = file_object.get_size_kb()
-                    file_time = file_object.get_creation_date()
-                    file_type = file_object.get_file_type()
-                    result.append([root, file, file_size, file_time, file_type])
-                    break
-
-        print("In total there are", total, " files with", name, "in", path)
         return result
 
     # Search by file type/ext and path
@@ -118,9 +93,3 @@ class Model:
 
 
 
-# main
-# model should receive ['File name', 'file path','Ext/type','file creation date', 'File size']
-fit= Model('laura', 'D:\\','.avi','6236311')
-file_found = fit.search_criteria()
-print("************")
-print(file_found)
