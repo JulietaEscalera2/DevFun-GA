@@ -1,3 +1,4 @@
+
 from PyQt5.QtGui import QIcon, QPixmap
 from PyQt5.QtWidgets import QWidget, QPushButton, QTableWidgetItem, QHBoxLayout, QGroupBox, QFormLayout, QLabel, \
     QLineEdit, QComboBox, QTableWidget, QVBoxLayout
@@ -9,6 +10,7 @@ class ProductView(QWidget):
         self.initUI()
 
     def initUI(self):
+
 
         self.vLayout = QHBoxLayout()
         self.group = QGroupBox()
