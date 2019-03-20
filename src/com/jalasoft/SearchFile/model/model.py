@@ -7,14 +7,6 @@ class Model:
     def __init__(self):
         pass
 
-        # self.objectParameters = objectParameters
-        # self.__name_file__ = self.objectParameters['Filename']
-        # self.__path_file__ = self.objectParameters['Path']
-        # self.__file_type__ = self.objectParameters['Extension']
-        # self.__file_size__ = self.objectParameters['Size']
-        # self.__file_creation_date__ = self.objectParameters['DateCreation']
-
-
     def search_criteria(self,objectParameters):
         result = []
         for root, dir, files in os.walk(self.objectParameters['Path']):
