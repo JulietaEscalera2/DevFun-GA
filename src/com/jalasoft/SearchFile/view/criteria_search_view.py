@@ -1,5 +1,6 @@
+
 from PyQt5.QtWidgets import QWidget, QPushButton, QHBoxLayout, QFormLayout, QLabel, \
-    QLineEdit,QTableWidget
+    QLineEdit, QTableWidget, QVBoxLayout, QCheckBox
 
 
 class CriteriaView(QWidget):
@@ -13,8 +14,7 @@ class CriteriaView(QWidget):
     def init_ui(self):
 
         self.hLayout = QHBoxLayout()
-        self.hLayout.addLayout(self.get_criteria_layout())
-        self.hLayout.addLayout(self.get_function_buttons())
+        self.hLayout.addLayout(self.get_left_criteria_layout())
         self.hLayout.addWidget(self.get_result_table_search())
         self.setLayout(self.hLayout)
 
@@ -24,9 +24,17 @@ class CriteriaView(QWidget):
         self.pathText = QLineEdit()
         self.fileName = QLineEdit()
         self.extText = QLineEdit()
+        self.size = QLineEdit()
+        self.createDate = QLineEdit()
+        self.hidden = QCheckBox()
+
         self.form.addRow(QLabel("Path"), self.pathText)
         self.form.addRow(QLabel("File Name"), self.fileName)
         self.form.addRow(QLabel("Extension"), self.extText)
+        self.form.addRow(QLabel("Size"), self.size)
+        self.form.addRow(QLabel("Create Date"), self.createDate)
+        self.form.addWidget( self.hidden)
+
         return self.form
 
     def get_result_table_search(self):
@@ -40,12 +48,23 @@ class CriteriaView(QWidget):
 
         return self.table
 
+    def get_left_criteria_layout(self):
+        self.v_layout = QVBoxLayout()
+        self.v_layout.addLayout(self.get_criteria_layout())
+        self.v_layout.addLayout(self.get_function_buttons())
+        return self.v_layout
+
+
     def get_function_buttons(self):
 
         self.button_layout = QHBoxLayout()
         button_search = QPushButton("Search")
         button_save = QPushButton("Save criteria")
         button_clean = QPushButton("Clean search")
+
+        # vertical_spacer = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        # self.button_layout.addItem(vertical_spacer)
+
         self.button_layout.addWidget(button_search)
         self.button_layout.addWidget(button_save)
         self.button_layout.addWidget(button_clean)
