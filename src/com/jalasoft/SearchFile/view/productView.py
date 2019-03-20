@@ -87,3 +87,12 @@ class ProductView(QWidget):
 
     def getPath(self):
         return self.pathText.text()
+
+    def getButtonSearch(self):
+        return self.buttonSearch
+
+    def getButtonSave(self):
+        return self.buttonSave
+
+    def getButtonClean(self):
+        return self.buttonSave
