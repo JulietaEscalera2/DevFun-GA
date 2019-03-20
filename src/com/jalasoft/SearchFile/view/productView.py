@@ -1,6 +1,6 @@
 from PyQt5.QtGui import QIcon, QPixmap
 from PyQt5.QtWidgets import QWidget, QPushButton, QHBoxLayout, QGroupBox, QFormLayout, QLabel, \
-    QLineEdit, QComboBox, QTableWidget, QVBoxLayout, QCheckBox
+    QLineEdit, QTableWidget, QCheckBox
 
 
 class ProductView(QWidget):
