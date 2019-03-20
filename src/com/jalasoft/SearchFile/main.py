@@ -1,6 +1,6 @@
 import sys
 
-from src.com.jalasoft.SearchFile.view.view import View
+from src.com.jalasoft.SearchFile.view.main_view import View
 from src.com.jalasoft.SearchFile.model.model import Model
 from src.com.jalasoft.SearchFile.controller.controller import Controller
 from PyQt5.QtWidgets import QApplication

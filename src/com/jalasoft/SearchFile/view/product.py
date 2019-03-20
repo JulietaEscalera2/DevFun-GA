@@ -1,7 +1,5 @@
 
-from PyQt5.QtWidgets import QWidget, QLineEdit
-from PyQt5.QtWidgets import QFormLayout
-from PyQt5.QtWidgets import QLabel
+from PyQt5.QtWidgets import QWidget, QLineEdit,QFormLayout,QLabel
 
 
 class ProductView(QWidget):
