@@ -1,6 +1,6 @@
 import os
-from src.com.jalasoft.SearchFile.controller.keysparameters import ParametersKeys
-from src.com.jalasoft.SearchFile.controller.keysparameters import ObjectParameters
+from src.com.jalasoft.SearchFile.utilities.keysparameters import ParametersKeys
+from src.com.jalasoft.SearchFile.utilities.keysparameters import ObjectParameters
 
 class Validator(ParametersKeys):
 
@@ -10,16 +10,16 @@ class Validator(ParametersKeys):
             # print (ObjectParameters.key_path)
             return ObjectParameters.key_path
         if os.path.isfile(ObjectParameters.key_path):
-            return True
+            return ObjectParameters.key_path
         if not os.path.isdir(ObjectParameters.key_path) or os.path.isfile(ObjectParameters.key_path):
             return f'It is not a path'
         if ObjectParameters.key_filename.isalnum():
-            return True
+            return ObjectParameters.key_filename
         else:
-            return False
+            return f'filename doesnot accept special characters'
 
         if ObjectParameters.key_extension.os.extsep():
-            return True
+            return ObjectParameters.key_extension
         if ObjectParameters.key_path == 'NULL':
             ObjectParameters.key_path = "NULL"
             #list_model[0]='NULL'
