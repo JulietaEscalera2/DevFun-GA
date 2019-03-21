@@ -1,4 +1,23 @@
+
 # IntellijIDEA files and folder
 *.iml
 .idea
 __pycache__/
+
+src/com/jalasoft/SearchFile/view/__pycache__/view.cpython-37.pyc
+src/com/jalasoft/SearchFile/view/__pycache__/productView.cpython-37.pyc
+src/com/jalasoft/SearchFile/view/__pycache__/main_view.cpython-37.pyc
+src/com/jalasoft/SearchFile/view/__pycache__/getData.cpython-37.pyc
+src/com/jalasoft/SearchFile/view/__pycache__/__init__.cpython-37.pyc
+main.py
+src/__pycache__/__init__.cpython-37.pyc
+src/com/__pycache__/__init__.cpython-37.pyc
+src/com/jalasoft/__pycache__/__init__.cpython-37.pyc
+src/com/jalasoft/SearchFile/__pycache__/__init__.cpython-37.pyc
+src/com/jalasoft/SearchFile/controller/__pycache__/__init__.cpython-37.pyc
+src/com/jalasoft/SearchFile/controller/__pycache__/controller.cpython-37.pyc
+src/com/jalasoft/SearchFile/controller/__pycache__/objectParameters.cpython-37.pyc
+src/com/jalasoft/SearchFile/model/__pycache__/__init__.cpython-37.pyc
+src/com/jalasoft/SearchFile/model/__pycache__/file.cpython-37.pyc
+src/com/jalasoft/SearchFile/model/__pycache__/model.cpython-37.pyc
+>>>>>>> 4d4ffe8b330517d5959dcb6d7a39b21de7078ba4

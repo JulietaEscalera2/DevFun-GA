@@ -1,7 +1,7 @@
 
 
-from src.com.jalasoft.SearchFile.view.getData import Data
-from src.com.jalasoft.SearchFile.view.productView import ProductView
+#from src.com.jalasoft.SearchFile.view.getData import Data
+from src.com.jalasoft.SearchFile.view.criteria_search_view import CriteriaView
 class ObjectParameters:
     def __init__(self):
         pass
@@ -14,12 +14,14 @@ class ObjectParameters:
             'DateCreation':'',
             'Size':''
         }
+
         searchParameters['Path'] = "c:'\'test"
         # searchParameters['Path'] = ProductView.getPath()
         # searchParameters['Filename'] = ProductView.getFileName()
         # searchParameters['Extension'] = ProductView.getExtention()
         # #searchParameters['DateCreation'] = get_date_creation() // comment this lines until view has them
         # #searchParameters['Size'] = get_file_size()
+
         return searchParameters
     # print(parameters)
 
