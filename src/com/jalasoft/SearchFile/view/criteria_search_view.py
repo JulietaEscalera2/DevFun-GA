@@ -1,6 +1,6 @@
 
 from PyQt5.QtWidgets import QWidget, QPushButton, QHBoxLayout, QFormLayout, QLabel, \
-    QLineEdit, QTableWidget, QVBoxLayout, QCheckBox
+    QLineEdit, QTableWidget, QVBoxLayout, QCheckBox, QSpacerItem, QSizePolicy
 
 
 class CriteriaView(QWidget):
@@ -52,8 +52,13 @@ class CriteriaView(QWidget):
         self.v_layout = QVBoxLayout()
         self.v_layout.addLayout(self.get_criteria_layout())
         self.v_layout.addLayout(self.get_function_buttons())
+        self.v_layout.addItem(self.get_vertical_spacer())
+
         return self.v_layout
 
+    def get_vertical_spacer(self):
+        vertical_spacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+        return vertical_spacer
 
     def get_function_buttons(self):
 
