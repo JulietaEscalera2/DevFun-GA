@@ -1,6 +1,6 @@
 import unittest
 
-from src.com.jalasoft.SearchFile.controller.validator import Validator
+from src.com.jalasoft.SearchFile.utilities.validator import Validator
 
 class ValidatorTest(unittest.TestCase):
     def test_pathData(self):

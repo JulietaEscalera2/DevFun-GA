@@ -14,12 +14,14 @@ class ObjectParameters:
             'DateCreation':'',
             'Size':''
         }
-        searchParameters['Path'] = CriteriaView.getPath()
-        # searchParameters['Path'] = 'Documents' #this is only an example
-        searchParameters['Filename'] = CriteriaView.getFileName()
-        searchParameters['Extension'] = CriteriaView.getExtention()
-        #searchParameters['DateCreation'] = get_date_creation() // comment this lines until view has them
-        #searchParameters['Size'] = get_file_size()
+
+        searchParameters['Path'] = "c:'\'test"
+        # searchParameters['Path'] = ProductView.getPath()
+        # searchParameters['Filename'] = ProductView.getFileName()
+        # searchParameters['Extension'] = ProductView.getExtention()
+        # #searchParameters['DateCreation'] = get_date_creation() // comment this lines until view has them
+        # #searchParameters['Size'] = get_file_size()
+
         return searchParameters
     # print(parameters)
 
