@@ -4,45 +4,35 @@ from src.com.jalasoft.SearchFile.utilities.keysparameters import ObjectParameter
 
 class Validator(ParametersKeys):
 
-    def read_list(list_SearchFile):
+    def readCriteria(list_SearchFile):
         list_model = []
-        if os.path.isdir(ObjectParameters.key_path):
+        if os.path.isdir(ObjectParameters.criteria['Path']):
             # print (ObjectParameters.key_path)
-            return ObjectParameters.key_path
-        if os.path.isfile(ObjectParameters.key_path):
-            return ObjectParameters.key_path
-        if not os.path.isdir(ObjectParameters.key_path) or os.path.isfile(ObjectParameters.key_path):
-            return f'It is not a path'
-        if ObjectParameters.key_filename.isalnum():
-            return ObjectParameters.key_filename
-        else:
-            return f'filename doesnot accept special characters'
-
-        if ObjectParameters.key_extension.os.extsep():
-            return ObjectParameters.key_extension
-        if ObjectParameters.key_path == 'NULL':
-            ObjectParameters.key_path = "NULL"
-            #list_model[0]='NULL'
-        if ObjectParameters.key_filename == 'NULL':
-            ObjectParameters.key_filename == "NULL"
-            #list_model[1] == 'NULL'
-        if ObjectParameters.key_extension == 'NULL': list_model[2] == 'NULL'
-        '''
-                // comment this lines until view has them
-        if ObjectParameters.key_datecreation == 'NULL': list_model[3] == 'NULL'
-        if ObjectParameters.key_size == 'NULL': list_model[4] == 'NULL'
-        '''
-
-        '''
-                // comment this lines until view has them
-                if ObjectParameters.key_size.isdigit():
-                    return True
-                if not ObjectParameters.key_size.isdigit():
-                    return f'Please input only numbers'
-                if ObjectParameters.key_datecreation.isalnum():
-                    return True
-                '''
+            return ObjectParameters.criteria['Path']
 
 
+        # if os.path.isdir(ParametersKeys.key_path):
+        #     # print (ObjectParameters.key_path)
+        #     return ParametersKeys.key_path
+        # if os.path.isfile(ParametersKeys.key_path):
+        #     return ParametersKeys.key_path
+        # if not os.path.isdir(ParametersKeys.key_path) or os.path.isfile(ParametersKeys.key_path):
+        #     return f'It is not a path'
+        # if ParametersKeys.key_path == '':
+        #     return ParametersKeys.key_path.ObjectParameters == "NULL"
+        #     #list_model[0]='NULL'
 
-
+        # if ParametersKeys.key_filename.isalnum():
+        #     return ParametersKeys.key_filename
+        # else:
+        #     return f'filename doesnot accept special characters'
+        #
+        # if ParametersKeys.key_extension.os.extsep():
+        #     return ObjectParameters.key_extension
+        #
+        # if ParametersKeys.key_filename == 'NULL':
+        #     return ParametersKeys.key_filename == "NULL"
+        #     #list_model[1] == 'NULL'
+        # if ParametersKeys.key_extension == 'NULL':
+        #     return ParametersKeys.key_extension == "NULL"
+        #     #list_model[2] == 'NULL'
