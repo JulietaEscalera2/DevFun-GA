@@ -9,6 +9,8 @@ class Model:
 
     def search_criteria(self,objectParameters):
         result = []
+        self.objectParameters = objectParameters
+
         for root, dir, files in os.walk(self.objectParameters['Path']):
 
             for file in files:
