@@ -66,7 +66,6 @@ class CriteriaView(QWidget):
         button_search = QPushButton("Search")
         button_save = QPushButton("Save criteria")
         button_clean = QPushButton("Clean search")
-
         # vertical_spacer = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         # self.button_layout.addItem(vertical_spacer)
 

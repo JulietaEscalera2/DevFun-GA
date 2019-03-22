@@ -1,10 +1,4 @@
 from src.com.jalasoft.SearchFile.controller.objectParameters import ObjectParameters
-<<<<<<< HEAD
-#from src.com.jalasoft.SearchFile.model.model import Model
-#from src.com.jalasoft.SearchFile.view import productView
-
-=======
->>>>>>> c4c50b2ff2bd471fcbd0f1404cc34cf3881b9a90
 
 class Controller:
     def __init__(self, mainView, model):
@@ -29,13 +23,8 @@ class Controller:
         return searchResult
 
 
-<<<<<<< HEAD
-    def fillTable(self,resultList):
-        table = self.mainView.getTable()
-=======
     def fill_table_view(self,resultList):
         table = self.view.getTable()
->>>>>>> c4c50b2ff2bd471fcbd0f1404cc34cf3881b9a90
         for result in resultList:
             table.append(result)
         print(table)
