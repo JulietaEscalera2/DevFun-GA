@@ -10,7 +10,7 @@ class Model:
     def search_criteria(self, objectParameters):
         self.objectParameters= objectParameters
         result = []
-
+        print(self.objectParameters.searchParameters['Path'])
         for root, dir, files in os.walk(self.objectParameters.searchParameters['Path']):
 
             for file in files:
@@ -22,10 +22,10 @@ class Model:
                 if self.objectParameters.searchParameters['Extension']!= 'Null' and not file.endswith(self.objectParameters.searchParameters['Extension']):
                     continue
 
-                if self.objectParameters.searchParameters['Size']!= 'Null' and str(file_object.get_size_kb())!= str(self.objectParameters.searchParameters['Size']):
-                    continue
-                if self.objectParameters.searchParameters['DateCreation']!= 'Null' and file_object.get_creation_date()!= self.objectParameters.searchParameters['DateCreation']:
-                    continue
+                #if self.objectParameters.searchParameters['Size']!= 'Null' and str(file_object.get_size_kb())!= str(self.objectParameters.searchParameters['Size']):
+                #    continue
+                #if self.objectParameters.searchParameters['DateCreation']!= 'Null' and file_object.get_creation_date()!= self.objectParameters.searchParameters['DateCreation']:
+                #    continue
 
                 result.append([root, file, file_object.get_file_type(), file_object.get_size_kb()])
         return result

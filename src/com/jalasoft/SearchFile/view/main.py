@@ -9,4 +9,4 @@ if __name__ == '__main__':
     view = MainView()
     model = Model()
     controller = Controller(view, model)
-    sys.exit(app.exec())
+sys.exit(app.exec())
