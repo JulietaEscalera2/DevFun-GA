@@ -42,9 +42,8 @@ class CriteriaView(QWidget):
         self.table = QTableWidget()
         self.table.size()
         self.table.setStyleSheet("font-size: 12px; color: #3232C0;")
-        self.table.setColumnCount(3)
-        self.table.setRowCount(1)
-        self.table.setHorizontalHeaderLabels(["Path",u"File Name",u"Ext"])
+        self.table.setColumnCount(4)
+        self.table.setHorizontalHeaderLabels(["Path",u"File Name",u"Ext",u"Size"])
 
         return self.table
 
@@ -63,55 +62,39 @@ class CriteriaView(QWidget):
     def get_function_buttons(self):
 
         self.button_layout = QHBoxLayout()
-        button_search = QPushButton("Search")
+        self.button_search = QPushButton("Search")
         button_save = QPushButton("Save criteria")
         button_clean = QPushButton("Clean search")
 
         # vertical_spacer = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         # self.button_layout.addItem(vertical_spacer)
 
-        self.button_layout.addWidget(button_search)
+        self.button_layout.addWidget(self.button_search)
         self.button_layout.addWidget(button_save)
         self.button_layout.addWidget(button_clean)
 
         return self.button_layout
 
-    # def get_table(self):
-    #     return self.table
-    #
-    # def get_file_name(self):
-    #     return self.fileName.text()
-    #
-    # def get_file_extention(self):
-    #     return self.extText.text()
-    #
-    # def get_path(self):
-    #     return self.pathText.text()
-    #
-    # def get_date_creation(self):
-    #     return self.extText.text()
-    #
-    # def get_file_size(self):
-    #     return self.pathText.text()
-
     def get_table(self):
-        return 'c://'
+        return self.table
 
     def get_file_name(self):
-        pass
+        return self.fileName.text()
 
-    def get_file_extension(self):
-        pass
+    def get_file_extention(self):
+        return self.extText.text()
 
     def get_path(self):
-        pass
+        return self.pathText.text()
 
-    def get_date_creation(self):
-        pass
+    #def get_date_creation(self):
+    #    return self.extText.text()
 
     def get_file_size(self):
-        pass
+        return self.size.text()
 
+    def get_search_button(self):
+        return self.button_search
 
 
 

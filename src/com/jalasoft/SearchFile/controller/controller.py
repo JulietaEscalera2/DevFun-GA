@@ -1,34 +1,40 @@
+from PyQt5.QtWidgets import QTableWidgetItem
 from src.com.jalasoft.SearchFile.controller.objectParameters import ObjectParameters
 
 class Controller:
     def __init__(self, view, model):
         self.view = view
         self.model = model
-        self.view.initUI()
+        self.view.initUI(self)
         self.model.__init__()
         self.criteria = ObjectParameters()
 
-    # filling object with search criteria
-    def fill_criteria_object(self):
-        path = self.view.get_path()
-        self.criteria['path'] = path
-        print(self.criteria)
-        return self.criteria
+    def add_action_listener(self):
+        self.central_widget = self.view.centralWidget()
+        self.central_widget.get_search_button().clicked.connect(lambda: self.__init_search())
 
-    # Send object criteria to model return dictionary with model search result
-    def searchCriteria(self, object_criteria):
-        searchResult = self.model.search_criteria(object_criteria)
-        tableView = self.fillTable(searchResult)
-        self.view.setTable(tableView)
-        return searchResult
+    def __init_search(self):
+        __path = self.central_widget.get_path()
+        __file_name = self.central_widget.get_file_name()
+        __file_extention = self.central_widget.get_file_extention()
+        __file_size = self.central_widget.get_file_size()
 
+        #create creteria
+        object_criteria = ObjectParameters()
+        object_criteria.data_to_file(__path, __file_name, __file_extention, '', __file_size)
+        resultList = self.model.search_criteria(object_criteria)
+        self.fill_table_view(resultList)
 
     def fill_table_view(self,resultList):
-        table = self.view.getTable()
+        size = len(resultList)
+        self.central_widget.get_table().setRowCount(size)
+        col = 0
         for result in resultList:
-            table.append(result)
-        print(table)
-        return table
+            row = 0
+            for data in result:
+                self.central_widget.get_table().setItem(col,row, QTableWidgetItem(str(data)))
+                row = row + 1
+            col = col + 1
 
 
 

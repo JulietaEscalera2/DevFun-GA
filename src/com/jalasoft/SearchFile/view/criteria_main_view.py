@@ -8,7 +8,8 @@ class MainView(QMainWindow):
     def __init__(self):
         super().__init__()
 
-    def initUI(self):
+    def initUI(self, controller):
+        self.__controller = controller
         self.setWindowTitle('Search File DevFun-GA')
         self.__initComponent()
         self.show()
@@ -27,6 +28,7 @@ class MainView(QMainWindow):
         exitButton.triggered.connect(self.close)
         fileMenu.addAction(exitButton)
         self.setCentralWidget(self.__getSearchView())
+        self.__controller.add_action_listener()
 
     def __getSearchView(self):
         main_view = CriteriaView()
