@@ -42,9 +42,8 @@ class CriteriaView(QWidget):
         self.table = QTableWidget()
         self.table.size()
         self.table.setStyleSheet("font-size: 12px; color: #3232C0;")
-        self.table.setColumnCount(3)
-        self.table.setRowCount(1)
-        self.table.setHorizontalHeaderLabels(["Path",u"File Name",u"Ext"])
+        self.table.setColumnCount(4)
+        self.table.setHorizontalHeaderLabels(["Path",u"File Name",u"Ext",u"Size"])
 
         return self.table
 

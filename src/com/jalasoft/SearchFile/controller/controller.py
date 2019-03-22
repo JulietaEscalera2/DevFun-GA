@@ -1,3 +1,4 @@
+from PyQt5.QtWidgets import QTableWidgetItem
 from src.com.jalasoft.SearchFile.controller.objectParameters import ObjectParameters
 
 class Controller:
@@ -17,30 +18,23 @@ class Controller:
         __file_name = self.central_widget.get_file_name()
         __file_extention = self.central_widget.get_file_extention()
         __file_size = self.central_widget.get_file_size()
-        print(__path)
-        print(__file_name)
-        print(__file_extention)
-        print(__file_size)
 
-    # filling object with search criteria
-    def fill_criteria_object(self):
-        path = self.view.get_path()
-
-
-    # Send object criteria to model return dictionary with model search result
-    def searchCriteria(self, object_criteria):
-        searchResult = self.model.search_criteria(object_criteria)
-        tableView = self.fillTable(searchResult)
-        self.view.setTable(tableView)
-        return searchResult
-
+        #create creteria
+        object_criteria = ObjectParameters()
+        object_criteria.data_to_file(__path, __file_name, __file_extention, '', __file_size)
+        resultList = self.model.search_criteria(object_criteria)
+        self.fill_table_view(resultList)
 
     def fill_table_view(self,resultList):
-        table = self.view.getTable()
+        size = len(resultList)
+        self.central_widget.get_table().setRowCount(size)
+        col = 0
         for result in resultList:
-            table.append(result)
-        print(table)
-        return table
+            row = 0
+            for data in result:
+                self.central_widget.get_table().setItem(col,row, QTableWidgetItem(str(data)))
+                row = row + 1
+            col = col + 1
 
 
 
