@@ -76,18 +76,41 @@ class CriteriaView(QWidget):
 
         return self.button_layout
 
-    def getTable(self):
-        return self.table
+    # def get_table(self):
+    #     return self.table
+    #
+    # def get_file_name(self):
+    #     return self.fileName.text()
+    #
+    # def get_file_extention(self):
+    #     return self.extText.text()
+    #
+    # def get_path(self):
+    #     return self.pathText.text()
+    #
+    # def get_date_creation(self):
+    #     return self.extText.text()
+    #
+    # def get_file_size(self):
+    #     return self.pathText.text()
 
-    def getFileName(self):
-        return self.fileName.text()
+    def get_table(self):
+        return 'c://'
 
-    def getExtention(self):
-        return self.extText.text()
+    def get_file_name(self):
+        pass
 
-    def getPath(self):
-        return self.pathText.text()
+    def get_file_extension(self):
+        pass
 
+    def get_path(self):
+        pass
+
+    def get_date_creation(self):
+        pass
+
+    def get_file_size(self):
+        pass
 
 
 
