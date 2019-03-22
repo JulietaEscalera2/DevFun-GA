@@ -4,9 +4,16 @@ class Controller:
     def __init__(self, view, model):
         self.view = view
         self.model = model
-        self.view.initUI()
+        self.view.initUI(self)
         self.model.__init__()
         self.criteria = ObjectParameters()
+
+    def add_action_listener(self):
+        self.central_widget = self.view.centralWidget()
+        self.central_widget.get_search_button().clicked.connect(lambda: self.__init_search())
+
+    def __init_search(self):
+        print("click")
 
     # filling object with search criteria
     def fill_criteria_object(self):
