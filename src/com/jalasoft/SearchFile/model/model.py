@@ -11,23 +11,27 @@ class Model:
         self.objectParameters= objectParameters
         result = []
         print(self.objectParameters.searchParameters['Path'])
+        print(self.objectParameters.searchParameters['Size'])
+        print(self.objectParameters.searchParameters['Filename'])
+        print(self.objectParameters.searchParameters['Extension'])
+
+        print("ttttt")
         for root, dir, files in os.walk(self.objectParameters.searchParameters['Path']):
 
             for file in files:
                 file_object = File(file, root)
-
-                if self.objectParameters.searchParameters['Filename']!= 'Null' and self.objectParameters.searchParameters['Filename'] not in file.lower():
+                if self.objectParameters.searchParameters['Filename']!= '' and self.objectParameters.searchParameters['Filename'] not in file.lower():
                     continue
 
-                if self.objectParameters.searchParameters['Extension']!= 'Null' and not file.endswith(self.objectParameters.searchParameters['Extension']):
+                if self.objectParameters.searchParameters['Extension']!= '' and not file.endswith(self.objectParameters.searchParameters['Extension']):
                     continue
-
-                #if self.objectParameters.searchParameters['Size']!= 'Null' and str(file_object.get_size_kb())!= str(self.objectParameters.searchParameters['Size']):
-                #    continue
+                if self.objectParameters.searchParameters['Size']!= '' and str(file_object.get_size_kb())!= str(self.objectParameters.searchParameters['Size']):
+                    continue
                 #if self.objectParameters.searchParameters['DateCreation']!= 'Null' and file_object.get_creation_date()!= self.objectParameters.searchParameters['DateCreation']:
                 #    continue
 
                 result.append([root, file, file_object.get_file_type(), file_object.get_size_kb()])
+        print(result)
         return result
 
 
