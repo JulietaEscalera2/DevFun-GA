@@ -1,6 +1,6 @@
 
 from PyQt5.QtWidgets import QWidget, QPushButton, QHBoxLayout, QFormLayout, QLabel, \
-    QLineEdit, QTableWidget, QVBoxLayout, QCheckBox, QSpacerItem, QSizePolicy
+    QLineEdit, QTableWidget, QVBoxLayout, QCheckBox, QSpacerItem, QSizePolicy, QDateEdit, QComboBox
 
 
 class CriteriaView(QWidget):
@@ -24,16 +24,20 @@ class CriteriaView(QWidget):
         self.pathText = QLineEdit()
         self.fileName = QLineEdit()
         self.extText = QLineEdit()
-        self.size = QLineEdit()
-        self.createDate = QLineEdit()
+        self.size_line = QLineEdit()
+        self.createDate = QDateEdit()
+        self.createDate.setCalendarPopup(True)
         self.hidden = QCheckBox()
+        self.read_only = QCheckBox()
 
         self.form.addRow(QLabel("Path"), self.pathText)
         self.form.addRow(QLabel("File Name"), self.fileName)
         self.form.addRow(QLabel("Extension"), self.extText)
-        self.form.addRow(QLabel("Size"), self.size)
+        self.form.addRow(QLabel("Size"), self.size_line)
+        self.form.addRow(self.combo_size())
         self.form.addRow(QLabel("Create Date"), self.createDate)
-        self.form.addWidget( self.hidden)
+        self.form.addRow(QLabel("Is Hidden"), self.hidden)
+        self.form.addRow(QLabel("Is Read Only"), self.read_only)
 
         return self.form
 
@@ -42,8 +46,8 @@ class CriteriaView(QWidget):
         self.table = QTableWidget()
         self.table.size()
         self.table.setStyleSheet("font-size: 12px; color: #3232C0;")
-        self.table.setColumnCount(4)
-        self.table.setHorizontalHeaderLabels(["Path",u"File Name",u"Ext",u"Size"])
+        self.table.setColumnCount(5)
+        self.table.setHorizontalHeaderLabels(["Path",u"File Name",u"Ext",u"Size","Create Date"])
 
         return self.table
 
@@ -65,15 +69,20 @@ class CriteriaView(QWidget):
         self.button_search = QPushButton("Search")
         button_save = QPushButton("Save criteria")
         button_clean = QPushButton("Clean search")
-
-        # vertical_spacer = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        # self.button_layout.addItem(vertical_spacer)
-
         self.button_layout.addWidget(self.button_search)
         self.button_layout.addWidget(button_save)
         self.button_layout.addWidget(button_clean)
 
         return self.button_layout
+
+    def combo_size(self):
+        self.size = QComboBox()
+        self.size.addItem("Kb")
+        self.size.addItem("Mb")
+        self.size.addItem("Gb")
+
+        return self.size
+
 
     def get_table(self):
         return self.table
@@ -91,11 +100,18 @@ class CriteriaView(QWidget):
     #    return self.extText.text()
 
     def get_file_size(self):
-        return self.size.text()
+        return self.size_line.text()
 
     def get_search_button(self):
         return self.button_search
 
 
+    def get_size_combo(self):
+        return self.size.text()
 
+    def get_isHidden(self):
+        return self.hidden
+
+    def get_isReadOnly(self):
+        return self.read_only
 
