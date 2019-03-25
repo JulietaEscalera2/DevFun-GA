@@ -4,9 +4,8 @@ from src.com.jalasoft.SearchFile.utilities.keysparameters import ObjectParameter
 
 class Validator(ParametersKeys):
 
-    def readCriteria(list_SearchFile):
-        list_model = []
-        if os.path.isdir(ObjectParameters.criteria['Path']):
+    def readCriteria(self):
+        if os.path.isdir(ObjectParameters.searchParameters['Path']):
             # print (ObjectParameters.key_path)
             return ObjectParameters.criteria['Path']
 

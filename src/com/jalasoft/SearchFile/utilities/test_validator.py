@@ -4,7 +4,7 @@ from src.com.jalasoft.SearchFile.utilities.validator import Validator
 
 class ValidatorTest(unittest.TestCase):
     def test_pathData(self):
-        list = 'C:\\Users\\hp\Documents\cartas'
+        list = 'C:\\Users\\hp\\Documents\\cartas'
         path_correct = Validator(list_SearchFile)
         expected = path_correct.read_list("C:\\Users\\hp\\Documents\\python-fundamentals")
         actual = path_correct.read_list('C:Users\hp\Documents\cartas')
