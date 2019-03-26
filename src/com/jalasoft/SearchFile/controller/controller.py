@@ -14,10 +14,10 @@ class Controller:
     def add_action_listener(self):
         self.central_widget = self.view.centralWidget()
         self.central_widget.get_search_button().clicked.connect(lambda: self.__init_search())
-        self.central.widget.get_search_button().clicked.connect(lambda: self.__init_save())
-        self.central.widget.get_search_button().clicked.connect(lambda: self.__init_clean())
-        self.central_widget.checkouthidden.stateChanged.connect(self.__init_search())
-        self.central_widget.checkoutreadonly.stateChanged.connect(self.__init_search())
+        # self.central.widget.get_search_button().clicked.connect(lambda: self.__init_save())
+        # self.central.widget.get_search_button().clicked.connect(lambda: self.__init_clean())
+        # self.central_widget.checkouthidden.stateChanged.connect(self.__init_search())
+        # self.central_widget.checkoutreadonly.stateChanged.connect(self.__init_search())
 
 
     def __init_search(self):  # buscara los criterios de busqueda de la vista

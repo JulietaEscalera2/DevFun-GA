@@ -4,8 +4,6 @@
     <list default="true" id="1aaf2ff9-b693-452e-9b65-f8d1d97983c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/objectParameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/objectParameters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_search_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_search_view.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +21,7 @@
     <SUITE FILE_PATH="coverage/DevFun_GA$validator.coverage" NAME="validator Coverage Results" MODIFIED="1553574254599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities" />
     <SUITE FILE_PATH="coverage/DevFun_GA$objectParameters.coverage" NAME="objectParameters Coverage Results" MODIFIED="1553518441218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller" />
     <SUITE FILE_PATH="coverage/DevFun_GA$getData.coverage" NAME="getData Coverage Results" MODIFIED="1552310661453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view" />
-    <SUITE FILE_PATH="coverage/DevFun_GA$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1553575839631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view" />
+    <SUITE FILE_PATH="coverage/DevFun_GA$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1553642186894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view" />
     <SUITE FILE_PATH="coverage/DevFun_GA$Unittests_for_test_validator_ValidatorTest_test_pathData.coverage" NAME="Unittests for test_validator.ValidatorTest.test_pathData Coverage Results" MODIFIED="1553574095713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities" />
     <SUITE FILE_PATH="coverage/DevFun_GA$controller.coverage" NAME="controller Coverage Results" MODIFIED="1553632085802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller" />
     <SUITE FILE_PATH="coverage/DevFun_GA$criteria_main_view.coverage" NAME="criteria_main_view Coverage Results" MODIFIED="1553140757878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view" />
@@ -77,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="40" column="50" lean-forward="true" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+            <state relative-caret-position="554">
+              <caret line="44" column="181" lean-forward="true" selection-start-line="44" selection-start-column="141" selection-end-line="44" selection-end-column="181" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -88,18 +86,17 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_search_view.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            <state relative-caret-position="264">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -268,7 +265,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.controller">
+  <component name="RunManager" selected="Python.main (1)">
     <configuration name="controller" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DevFun-GA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -381,8 +378,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.controller" />
         <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.controller" />
         <item itemvalue="Python.criteria_search_view" />
         <item itemvalue="Python.validator" />
         <item itemvalue="Python.keysparameters" />
@@ -414,7 +411,8 @@
       <workItem from="1553258623244" duration="3949000" />
       <workItem from="1553516537582" duration="5748000" />
       <workItem from="1553566658229" duration="13987000" />
-      <workItem from="1553631628601" duration="457000" />
+      <workItem from="1553631628601" duration="923000" />
+      <workItem from="1553641913592" duration="901000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'develop' of https://github.com/JulietaEscalera2/DevFun-GA into controller/integration&#10;&#10;# Conflicts:&#10;#&#9;src/com/jalasoft/SearchFile/DB/db.py&#10;#&#9;src/com/jalasoft/SearchFile/controller/controller.py&#10;#&#9;src/com/jalasoft/SearchFile/main.py&#10;#&#9;src/com/jalasoft/SearchFile/view/productView.py&#10;#&#9;src/com/jalasoft/SearchFile/view/view.py">
       <created>1552955755429</created>
@@ -465,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553580444782</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="change to hidden y read only">
+      <created>1553632121634</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1553632121634</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -492,18 +497,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75259000" />
+    <option name="totallyTimeSpent" value="76626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24816626" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49755502" visible="true" weight="0.268757" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49755502" visible="true" weight="0.26763716" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4140753" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -558,7 +562,8 @@
     <MESSAGE value="changes to convert size and read only checkboxes" />
     <MESSAGE value="changes to convert size and read only checkboxes hidden y read only" />
     <MESSAGE value="changes: convert size, checkboxes hidden y read only, and buttons save and clean." />
-    <option name="LAST_COMMIT_MESSAGE" value="changes: convert size, checkboxes hidden y read only, and buttons save and clean." />
+    <MESSAGE value="change to hidden y read only" />
+    <option name="LAST_COMMIT_MESSAGE" value="change to hidden y read only" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/DB/db.py">
@@ -643,30 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_search_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_main_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/objectParameters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -681,10 +662,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_search_view.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_main_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="40" column="50" lean-forward="true" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+        <state relative-caret-position="554">
+          <caret line="44" column="181" lean-forward="true" selection-start-line="44" selection-start-column="141" selection-end-line="44" selection-end-column="181" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
