@@ -14,7 +14,7 @@ class Model:
         print(self.objectParameters.searchParameters['Size'])
         print(self.objectParameters.searchParameters['Filename'])
         print(self.objectParameters.searchParameters['Extension'])
-
+        print(self.objectParameters.searchParameters['DateCreation'])
         print("ttttt")
         for root, dir, files in os.walk(self.objectParameters.searchParameters['Path']):
 
