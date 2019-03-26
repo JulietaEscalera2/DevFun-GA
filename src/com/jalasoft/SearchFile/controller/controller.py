@@ -27,10 +27,16 @@ class Controller:
         __file_size_hidden = self.central_widget.get_isHidden()
         __file_size_ReadOnly = self.central_widget.get_isReadOnly()
 
+        # verify status of checkboxes  (aca no estoy muy segura de como enviarle al modelo)
         if self.checkhidden.isChecked() == True :
+            checkboxHidden = self.model.__file_size_hidden(True)
             return __file_size_hidden == True
-        if self.checkoutreadonly.isChecked() == True:
+        elif self.checkhidden.isChecked() == False:
+            return __file_size_hidden == False
+        elif self.checkoutread_only.isChecked() == True:
             return __file_size_ReadOnly == True
+        elif self.checkoutread_only.isChecked() == False:
+            return __file_size_ReadOnly == False
 
         #create criteria
         object_criteria = ObjectParameters()
