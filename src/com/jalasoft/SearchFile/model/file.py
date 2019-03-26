@@ -1,4 +1,4 @@
-import os,time
+import os,time, win32api, win32con
 
 
 class File:
@@ -7,13 +7,8 @@ class File:
         self.__file_path__ = path
 
     # this return the size in kb of the file
-    def get_size_kb(self):
+    def get_size(self):
         return os.path.getsize(os.path.join(self.__file_path__ , self.__file_name__))
-
-    # this return the size in MB of the file
-    def get_size_mb(self):
-        return os.path.getsize(os.path.join(self.__file_path__ , self.__file_name__))
-
     # this return the creation date of the file
     def get_creation_date(self):
         file_time = os.path.getmtime(os.path.join(self.__file_path__ , self.__file_name__))
@@ -31,4 +26,10 @@ class File:
     def get_file_in_path(self):
         return os.path.join(self.__file_path__ , self.__file_name__)
 
+    def is_hidden(self):
+        path=os.path.join(self.__file_path__ , self.__file_name__)
+        attribute = win32api.GetFileAttributes(path)
+        return attribute & (win32con.FILE_ATTRIBUTE_HIDDEN | win32con.FILE_ATTRIBUTE_SYSTEM)
 
+
+print()
