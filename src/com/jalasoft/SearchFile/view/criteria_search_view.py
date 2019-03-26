@@ -1,4 +1,5 @@
 
+
 from PyQt5.QtWidgets import QWidget, QPushButton, QHBoxLayout, QFormLayout, QLabel, \
     QLineEdit, QTableWidget, QVBoxLayout, QCheckBox, QSpacerItem, QSizePolicy, QDateEdit, QComboBox
 
@@ -114,4 +115,3 @@ class CriteriaView(QWidget):
 
     def get_isReadOnly(self):
         return self.read_only
-

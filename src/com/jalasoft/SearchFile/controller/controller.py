@@ -29,20 +29,20 @@ class Controller:
         __file_size_hidden = self.central_widget.get_isHidden()
         __file_size_ReadOnly = self.central_widget.get_isReadOnly()
 
-        # verify status of checkboxes  (aca no estoy muy segura de como enviarle al modelo)
-        if self.checkhidden.isChecked() == True :
-            checkboxHidden = self.model.__file_size_hidden(True)
-            return __file_size_hidden == True
-        elif self.checkhidden.isChecked() == False:
-            return __file_size_hidden == False
-        elif self.checkoutread_only.isChecked() == True:
-            return __file_size_ReadOnly == True
-        elif self.checkoutread_only.isChecked() == False:
-            return __file_size_ReadOnly == False
+        # # verify status of checkboxes  (aca no estoy muy segura de como enviarle al modelo)
+        # if self.checkhidden.isChecked() == True :
+        #     checkboxHidden = self.model.__file_size_hidden(True)
+        #     return __file_size_hidden == True
+        # elif self.checkhidden.isChecked() == False:
+        #     return __file_size_hidden == False
+        # elif self.checkoutread_only.isChecked() == True:
+        #     return __file_size_ReadOnly == True
+        # elif self.checkoutread_only.isChecked() == False:
+        #     return __file_size_ReadOnly == False
 
         #create criteria
         object_criteria = ObjectParameters()
-        object_criteria.data_to_file(__path, __file_name, __file_extention, '', ConvertorSize.get_size_value(__file_size, __file_size_unit))
+        object_criteria.data_to_file(__path, __file_name, __file_extention, '', ConvertorSize.get_size_value(__file_size, __file_size_unit), __file_size_hidden, __file_size_ReadOnly)
         resultList = self.model.search_criteria(object_criteria)
         self.fill_table_view(resultList)
 
