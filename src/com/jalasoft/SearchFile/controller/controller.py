@@ -14,8 +14,11 @@ class Controller:
     def add_action_listener(self):
         self.central_widget = self.view.centralWidget()
         self.central_widget.get_search_button().clicked.connect(lambda: self.__init_search())
+        self.central_widget.checkouthidden.stateChanged.connect(self.__init_search())
+        self.central_widget.checkoutreadonly.stateChanged.connect(self.__init_search())
 
-    def __init_search(self): #buscara los criterios de busqueda de la vista
+
+    def __init_search(self):  # buscara los criterios de busqueda de la vista
         __path = self.central_widget.get_path()
         __file_name = self.central_widget.get_file_name()
         __file_extention = self.central_widget.get_file_extention()
@@ -24,17 +27,17 @@ class Controller:
         __file_size_hidden = self.central_widget.get_isHidden()
         __file_size_ReadOnly = self.central_widget.get_isReadOnly()
 
-        # #to change files size combo all to kb
-        # if __file_size_combo == self.size.text("Mb"):
-        #     __file_size = __file_size * 1024
-        # if __file_size_combo == self.size.text("Gb"):
-        #     __file_size = __file_size * 2048
+        if self.checkhidden.isChecked() == True :
+            return __file_size_hidden == True
+        if self.checkoutreadonly.isChecked() == True:
+            return __file_size_ReadOnly == True
 
         #create criteria
         object_criteria = ObjectParameters()
         object_criteria.data_to_file(__path, __file_name, __file_extention, '', ConvertorSize.get_size_value(__file_size, __file_size_unit))
         resultList = self.model.search_criteria(object_criteria)
         self.fill_table_view(resultList)
+
 
     def fill_table_view(self,resultList):
         size = len(resultList)
@@ -46,6 +49,7 @@ class Controller:
                 self.central_widget.get_table().setItem(col,row, QTableWidgetItem(str(data)))
                 row = row + 1
             col = col + 1
+
 
 
 
