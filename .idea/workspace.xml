@@ -24,7 +24,7 @@
     <SUITE FILE_PATH="coverage/DevFun_GA$getData.coverage" NAME="getData Coverage Results" MODIFIED="1552310661453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view" />
     <SUITE FILE_PATH="coverage/DevFun_GA$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1553575839631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view" />
     <SUITE FILE_PATH="coverage/DevFun_GA$Unittests_for_test_validator_ValidatorTest_test_pathData.coverage" NAME="Unittests for test_validator.ValidatorTest.test_pathData Coverage Results" MODIFIED="1553574095713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities" />
-    <SUITE FILE_PATH="coverage/DevFun_GA$controller.coverage" NAME="controller Coverage Results" MODIFIED="1553579230421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller" />
+    <SUITE FILE_PATH="coverage/DevFun_GA$controller.coverage" NAME="controller Coverage Results" MODIFIED="1553580366807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller" />
     <SUITE FILE_PATH="coverage/DevFun_GA$criteria_main_view.coverage" NAME="criteria_main_view Coverage Results" MODIFIED="1553140757878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view" />
   </component>
   <component name="DatabaseView">
@@ -76,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+            <state relative-caret-position="184">
+              <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -88,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_search_view.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1933">
-              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -106,7 +106,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_main_view.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-28">
+            <state relative-caret-position="264">
               <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -143,7 +143,6 @@
         <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/main.py" />
-        <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_search_view.py" />
         <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/main.py" />
         <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/objectParameters.py" />
         <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/model/model.py" />
@@ -151,6 +150,7 @@
         <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/test_validator.py" />
         <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/keysparameters.py" />
         <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/validator.py" />
+        <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_search_view.py" />
         <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/controller.py" />
       </list>
     </option>
@@ -412,7 +412,7 @@
       <workItem from="1553214370858" duration="2892000" />
       <workItem from="1553258623244" duration="3949000" />
       <workItem from="1553516537582" duration="5748000" />
-      <workItem from="1553566658229" duration="12288000" />
+      <workItem from="1553566658229" duration="13421000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'develop' of https://github.com/JulietaEscalera2/DevFun-GA into controller/integration&#10;&#10;# Conflicts:&#10;#&#9;src/com/jalasoft/SearchFile/DB/db.py&#10;#&#9;src/com/jalasoft/SearchFile/controller/controller.py&#10;#&#9;src/com/jalasoft/SearchFile/main.py&#10;#&#9;src/com/jalasoft/SearchFile/view/productView.py&#10;#&#9;src/com/jalasoft/SearchFile/view/view.py">
       <created>1552955755429</created>
@@ -442,7 +442,21 @@
       <option name="project" value="LOCAL" />
       <updated>1553574603887</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changes to convert size and read only checkboxes">
+      <created>1553579297265</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1553579297265</updated>
+    </task>
+    <task id="LOCAL-00006" summary="changes to convert size and read only checkboxes hidden y read only">
+      <created>1553579926184</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1553579926184</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -469,7 +483,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73103000" />
+    <option name="totallyTimeSpent" value="74236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -486,7 +500,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.036954086" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.055646483" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502445" side_tool="true" weight="0.20156775" />
       <window_info anchor="bottom" id="Terminal" order="11" />
@@ -532,7 +546,9 @@
     <MESSAGE value="To integration: Merge branch 'develop' of https://github.com/JulietaEscalera2/DevFun-GA into controller/integration&#10;&#10;# Conflicts:&#10;#&#9;src/com/jalasoft/SearchFile/DB/db.py&#10;#&#9;src/com/jalasoft/SearchFile/controller/controller.py&#10;#&#9;src/com/jalasoft/SearchFile/main.py&#10;#&#9;src/com/jalasoft/SearchFile/view/productView.py&#10;#&#9;src/com/jalasoft/SearchFile/view/view.py" />
     <MESSAGE value="changes 8 on utilities" />
     <MESSAGE value="changes to convert size to kb" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes to convert size to kb" />
+    <MESSAGE value="changes to convert size and read only checkboxes" />
+    <MESSAGE value="changes to convert size and read only checkboxes hidden y read only" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes to convert size and read only checkboxes hidden y read only" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/DB/db.py">
@@ -621,16 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_main_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/convertorSize.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -648,17 +654,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_main_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_search_view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1933">
-          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        <state relative-caret-position="184">
+          <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
