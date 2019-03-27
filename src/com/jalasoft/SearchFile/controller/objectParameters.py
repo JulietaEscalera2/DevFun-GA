@@ -16,13 +16,5 @@ class ObjectParameters:
         self.searchParameters['Hidden'] = get_isHidden
         self.searchParameters['ReadOnly'] = get_isReadOnly
 
-        # #to empty data
-        # if self.searchParameters['Path'] == '':
-        #     self.searchParameters['Path'] = ''
-        # if self.searchParameters['Filename'] == '':
-        #     self.searchParameters['Filename'] = ''
-        # if self.searchParameters['Extension'] == '':
-        #     self.searchParameters['Extension'] = ''
-        # if self.searchParameters['Size'] == '':
-        #     self.searchParameters['Size'] = ''
+
 
