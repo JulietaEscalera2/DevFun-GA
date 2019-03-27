@@ -1,5 +1,13 @@
-import os
+"""
+Search files
 
+This is the Model class.
+
+Author: Teresa Lopez
+Last edited: 3/27/2019
+"""
+import os
+from datetime import datetime
 
 from src.com.jalasoft.SearchFile.model.file import File
 
@@ -25,10 +33,15 @@ class Model:
                     continue
                 if self.objectParameters.searchParameters['Size']!= '' and not int(file_object.get_size())<= int(self.objectParameters.searchParameters['Size']):
                     continue
-                # print(self.objectParameters.searchParameters['DateCreation'])
-                # print(file_object.get_creation_date())
-                # # if self.objectParameters.searchParameters['DateCreation']!= '' and file_object.get_creation_date()!= self.objectParameters.searchParameters['DateCreation']:
-                # #     continue
+                print("start")
+                d = datetime.utcfromtimestamp(self.objectParameters.searchParameters['DateCreation'])
+                formated_date = d.strftime('%d %b %Y')
+                print("before")
+                print(formated_date)
+                print("after")
+                print(file_object.get_creation_date())
+                if self.objectParameters.searchParameters['DateCreation']!= '' and file_object.get_creation_date()!= self.objectParameters.searchParameters['DateCreation']:
+                    continue
                 print(root)
                 result.append([root, file, file_object.get_file_type(), file_object.get_size(),file_object.get_creation_date()])
         print(result)
@@ -77,4 +90,3 @@ class Model:
                     result.append([root, file, file_size, file_time, file_type])
 
         return result
-
