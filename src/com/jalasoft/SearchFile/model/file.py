@@ -30,6 +30,8 @@ class File:
         path=os.path.join(self.__file_path__ , self.__file_name__)
         attribute = win32api.GetFileAttributes(path)
         return attribute & (win32con.FILE_ATTRIBUTE_HIDDEN | win32con.FILE_ATTRIBUTE_SYSTEM)
+    def is_readOnly(self):
+        path=os.path.join(self.__file_path__ , self.__file_name__)
+        attribute = win32api.GetFileAttributes(path)
+        return attribute & (win32con.FILE_ATTRIBUTE_READONLY | win32con.FILE_ATTRIBUTE_SYSTEM)
 
-
-print()

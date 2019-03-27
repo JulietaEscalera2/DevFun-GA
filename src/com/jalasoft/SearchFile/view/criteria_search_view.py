@@ -116,5 +116,8 @@ class CriteriaView(QWidget):
             return False
 
     def get_isReadOnly(self):
-        return self.read_only
+        if self.read_only.isChecked() == True:
+            return True
+        else:
+            return False
 
