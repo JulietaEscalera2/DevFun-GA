@@ -110,7 +110,10 @@ class CriteriaView(QWidget):
         return self.size.text()
 
     def get_isHidden(self):
-        return self.hidden
+        if self.hidden.isChecked() == True:
+            return True
+        else:
+            return False
 
     def get_isReadOnly(self):
         return self.read_only

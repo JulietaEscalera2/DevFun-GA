@@ -15,18 +15,19 @@ class Model:
 
             for file in files:
                 file_object = File(file, root)
+                print("tst1")
+                print(bool(self.objectParameters.searchParameters['Hidden']))
+                print(int(file_object.is_hidden()))
+                print("tst2")
                 if self.objectParameters.searchParameters['Hidden'] and int(file_object.is_hidden())!=2:
                     continue
-
                 if self.objectParameters.searchParameters['Filename']!= '' and self.objectParameters.searchParameters['Filename'] not in file.lower():
                     continue
-
                 if self.objectParameters.searchParameters['Extension']!= '' and not file.endswith(self.objectParameters.searchParameters['Extension']):
                     continue
-                if self.objectParameters.searchParameters['Size']!= '' and int(file_object.get_size_kb())<= int(self.objectParameters.searchParameters['Size']):
-
+                if self.objectParameters.searchParameters['Size']!= '' and int(file_object.get_size())<= int(self.objectParameters.searchParameters['Size']):
                     continue
-                # if self.objectParameters.searchParameters['DateCreation']!= 'Null' and file_object.get_creation_date()!= self.objectParameters.searchParameters['DateCreation']:
+                # if self.objectParameters.searchParameters['DateCreation']!= '' and file_object.get_creation_date()!= self.objectParameters.searchParameters['DateCreation']:
                 #    continue
 
                 result.append([root, file, file_object.get_file_type(), file_object.get_size()])
