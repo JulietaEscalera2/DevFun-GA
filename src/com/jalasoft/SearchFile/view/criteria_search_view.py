@@ -35,19 +35,17 @@ class CriteriaView(QWidget):
         self.form.addRow(QLabel("File Name"), self.fileName)
         self.form.addRow(QLabel("Extension"), self.extText)
         self.form.addRow(QLabel("Size"), self.size_line)
-        self.form.addRow(self.combo_size())
+        self.form.addRow(QLabel("         "), self.combo_size())
         self.form.addRow(QLabel("Create Date"), self.createDate)
         self.form.addRow(QLabel("Is Hidden"), self.hidden)
         self.form.addRow(QLabel("Is Read Only"), self.read_only)
-
-
         return self.form
 
     def get_result_table_search(self):
 
         self.table = QTableWidget()
         self.table.size()
-        self.table.setStyleSheet("font-size: 12px; color: #3232C0;")
+        self.table.setStyleSheet("font-size: 12px; color: Black;")
         self.table.setColumnCount(5)
         self.table.setHorizontalHeaderLabels(["Path",u"File Name",u"Ext",u"Size","Create Date"])
 
