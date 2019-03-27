@@ -4,10 +4,12 @@ from src.com.jalasoft.SearchFile.utilities.validator import Validator
 
 class ValidatorTest(unittest.TestCase):
     def test_pathData(self):
-        list = 'C:\\Users\\hp\\Documents\\cartas'
-        # path_correct = Validator(list)
-        expected = list('C:\\Users\\hp\\Documents\\cartas')
-        actual = list('C:\\Users\\hp\\Documents\\cartas')
+        path = 'C:\\Users'
+        prueba = 'otro'
+        expected = path
+
+        actual = path
+
         self.assertEqual(expected, actual)
 
     # def test_pathName(self):

@@ -1,13 +1,28 @@
 import os
-from src.com.jalasoft.SearchFile.utilities.keysparameters import ParametersKeys
-from src.com.jalasoft.SearchFile.utilities.keysparameters import ObjectParameters
 
-class Validator(ParametersKeys):
+from src.com.jalasoft.SearchFile.controller import objectParameters
+# from src.com.jalasoft.SearchFile.utilities.keysparameters import ParametersKeys
+# from src.com.jalasoft.SearchFile.utilities.keysparameters import ObjectParameters
 
-    # def readCriteria(self):
-        if os.path.isdir(ObjectParameters.searchParameters['Path']):
-            print (ObjectParameters.key_path)
-            # return ObjectParameters.criteria['Path']
+class Validator():
+    path = 'C:\\Users'
+    saludo = 'hola'
+    if os.path.isdir(path):
+        print(path)
+    if not os.path.isdir(saludo):
+        print('it is not a path')
+
+    # def read_criteria(self):
+    #     file_path = ObjectParameters.searchParameters['path']
+    #
+    #     if os.path.isdir(file_path):
+    #         print(file_path)
+    #     if not os.path.isdir(file_path):
+    #         print('That it is not a path')
+
+    objectParameters = objectParameters
+    file_path = objectParameters.searchParameters['path']
+    print(file_path)
 
     # print(readCriteria())
         # if os.path.isdir(ParametersKeys.key_path):

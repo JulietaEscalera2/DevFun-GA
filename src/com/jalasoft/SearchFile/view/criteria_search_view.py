@@ -106,6 +106,9 @@ class CriteriaView(QWidget):
     def get_search_button(self):
         return self.button_search
 
+    # def get_save_button(self):
+    #     return self.button_save
+
 
     def get_size_combo(self):
         return self.size.text()
