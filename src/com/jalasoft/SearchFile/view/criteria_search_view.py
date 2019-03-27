@@ -1,6 +1,7 @@
 
+import sys
 from PyQt5.QtWidgets import QWidget, QPushButton, QHBoxLayout, QFormLayout, QLabel, \
-    QLineEdit, QTableWidget, QVBoxLayout, QCheckBox, QSpacerItem, QSizePolicy, QDateEdit, QComboBox
+    QLineEdit, QTableWidget, QVBoxLayout, QCheckBox, QSpacerItem, QSizePolicy, QDateEdit, QComboBox, QGroupBox
 
 
 class CriteriaView(QWidget):
@@ -38,6 +39,7 @@ class CriteriaView(QWidget):
         self.form.addRow(QLabel("Create Date"), self.createDate)
         self.form.addRow(QLabel("Is Hidden"), self.hidden)
         self.form.addRow(QLabel("Is Read Only"), self.read_only)
+
 
         return self.form
 
@@ -96,15 +98,14 @@ class CriteriaView(QWidget):
     def get_path(self):
         return self.pathText.text()
 
-    #def get_date_creation(self):
-    #    return self.extText.text()
+    def get_date_creation(self):
+       return self.createDate
 
     def get_file_size(self):
         return self.size_line.text()
 
     def get_search_button(self):
         return self.button_search
-
 
     def get_size_combo(self):
         return self.size.text()

@@ -7,7 +7,7 @@ class ObjectParameters:
         self.searchParameters['Path'] = get_path_file
         self.searchParameters['Filename'] = get_file_name
         self.searchParameters['Extension'] = get_extension
-        #self.searchParameters['DateCreation'] = get_date_creation() // comment this lines until view has them
+        self.searchParameters['DateCreation'] = get_date_creation
         self.searchParameters['Size'] = get_file_size
         self.searchParameters['Hidden'] = isHidden
         self.searchParameters['ReadOnly'] = isReadOnly

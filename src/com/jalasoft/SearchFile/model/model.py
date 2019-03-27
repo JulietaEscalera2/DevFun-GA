@@ -25,10 +25,12 @@ class Model:
                     continue
                 if self.objectParameters.searchParameters['Size']!= '' and not int(file_object.get_size())<= int(self.objectParameters.searchParameters['Size']):
                     continue
-                # if self.objectParameters.searchParameters['DateCreation']!= '' and file_object.get_creation_date()!= self.objectParameters.searchParameters['DateCreation']:
-                #    continue
+                print(g(self.objectParameters.searchParameters['DateCreation']))
+                print(file_object.get_creation_date())
+                if self.objectParameters.searchParameters['DateCreation']!= '' and file_object.get_creation_date()!= self.objectParameters.searchParameters['DateCreation']:
+                    continue
 
-                result.append([root, file, file_object.get_file_type(), file_object.get_size()])
+                result.append([root, file, file_object.get_file_type(), file_object.get_size(),file_object.get_creation_date()])
         print(result)
         return result
 
