@@ -17,19 +17,21 @@ class Model:
                 file_object = File(file, root)
                 if self.objectParameters.searchParameters['Hidden'] and int(file_object.is_hidden())!=2:
                     continue
-
+                if self.objectParameters.searchParameters['ReadOnly'] and int(file_object.is_readOnly())!=1:
+                    continue
                 if self.objectParameters.searchParameters['Filename']!= '' and self.objectParameters.searchParameters['Filename'] not in file.lower():
                     continue
-
                 if self.objectParameters.searchParameters['Extension']!= '' and not file.endswith(self.objectParameters.searchParameters['Extension']):
                     continue
-                if self.objectParameters.searchParameters['Size']!= '' and int(file_object.get_size_kb())<= int(self.objectParameters.searchParameters['Size']):
-
+                if self.objectParameters.searchParameters['Size']!= '' and not int(file_object.get_size())<= int(self.objectParameters.searchParameters['Size']):
                     continue
-                # if self.objectParameters.searchParameters['DateCreation']!= 'Null' and file_object.get_creation_date()!= self.objectParameters.searchParameters['DateCreation']:
-                #    continue
-
-                result.append([root, file, file_object.get_file_type(), file_object.get_size()])
+                # print(self.objectParameters.searchParameters['DateCreation'])
+                # print(file_object.get_creation_date())
+                # # if self.objectParameters.searchParameters['DateCreation']!= '' and file_object.get_creation_date()!= self.objectParameters.searchParameters['DateCreation']:
+                # #     continue
+                print(root)
+                print(file)
+                result.append([root, file, file_object.get_file_type(), file_object.get_size(),file_object.get_creation_date()])
         print(result)
         return result
 
@@ -77,5 +79,3 @@ class Model:
 
         return result
 
-# attribute = win32api.GetFileAttributes('G://test/bugs2.txt')
-# print(attribute & (win32con.FILE_ATTRIBUTE_HIDDEN | win32con.FILE_ATTRIBUTE_SYSTEM))
