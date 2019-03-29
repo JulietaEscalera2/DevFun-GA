@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import QWidget, QPushButton, QHBoxLayout, QFormLayout, QLab
 from src.com.jalasoft.SearchFile.view.table_tamplate import TableTemplate
 
 
+
 class CriteriaView(QWidget):
 
     def __init__(self):
@@ -41,6 +42,7 @@ class CriteriaView(QWidget):
         self.form.addRow(QLabel("Size"), self.size_line)
         self.form.addRow(QLabel("         "), self.combo_size())
         self.form.addRow(QLabel("Create Date"), self.createDate)
+
         return self.form
 
     def check_box(self):
@@ -93,6 +95,7 @@ class CriteriaView(QWidget):
     def combo_size(self):
         self.size = QComboBox()
         self.size.setStyleSheet("QComboBox { background-color: LightBlue }; border-width: 2px")
+        self.size.addItem("Bytes")
         self.size.addItem("Kb")
         self.size.addItem("Mb")
         self.size.addItem("Gb")
@@ -110,12 +113,6 @@ class CriteriaView(QWidget):
         return self.extText.text()
 
     def get_path(self):
-        return self.pathText.text()
-
-    def get_date_creation(self):
-       return self.createDate
-
-    def get_file_size(self):
         return self.size_line.text()
 
     def get_search_button(self):
@@ -123,6 +120,9 @@ class CriteriaView(QWidget):
 
     def get_size_combo(self):
         return self.size.text()
+
+    def get_file_size(self):
+        return self.size_line.text()
 
     def get_isHidden(self):
         if self.hidden.isChecked() == True:

@@ -1,12 +1,14 @@
 """
 Search files
+=======
+import os,time, win32api, win32con
+
 
 This is the Model class.
 
 Author: Teresa Lopez
 Last edited: 3/27/2019
 """
-#import os,time, win32api, win32con
 from datetime import datetime
 
 class File:
