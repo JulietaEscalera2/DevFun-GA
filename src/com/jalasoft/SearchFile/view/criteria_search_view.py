@@ -47,10 +47,10 @@ class CriteriaView(QWidget):
         return self.form
 
     def check_box(self):
-        self.check_group = QGroupBox()
-        # self.hidden = QCheckBox()
-        # self.read_only = QCheckBox()
-        self.check_group.setLayout(self.hidden)
+        self.check_group = QHBoxLayout()
+        self.hidden = QCheckBox()
+        self.read_only = QCheckBox()
+        self.check_group.addWidget(self.hidden)
         self.check_group.addWidget(self.read_only)
         return self.check_group
 
@@ -66,7 +66,9 @@ class CriteriaView(QWidget):
     def get_left_criteria_layout(self):
         self.v_layout = QVBoxLayout()
         self.v_layout.addLayout(self.get_criteria_layout())
+        self.v_layout.addLayout(self.check_box())
         self.v_layout.addLayout(self.get_function_buttons())
+
         self.v_layout.addItem(self.get_vertical_spacer())
 
         return self.v_layout
