@@ -41,19 +41,17 @@ class CriteriaView(QWidget):
         self.form.addRow(QLabel("Size"), self.size_line)
         self.form.addRow(QLabel("         "), self.combo_size())
         self.form.addRow(QLabel("Create Date"), self.createDate)
-        #self.form.addWidget(self.check_box())
-        self.form.addRow(QLabel("Is Hidden"), self.hidden)
-        self.form.addRow(QLabel("Is Read Only"), self.read_only)
         return self.form
 
     def check_box(self):
         self.check_group = QHBoxLayout()
         self.hidden = QCheckBox()
         self.read_only = QCheckBox()
+        self.hidden = QCheckBox("Is Hidden")
+        self.read_only = QCheckBox("Is Read Only")
         self.check_group.addWidget(self.hidden)
         self.check_group.addWidget(self.read_only)
         return self.check_group
-
 
 
     def get_result_table_search(self):
