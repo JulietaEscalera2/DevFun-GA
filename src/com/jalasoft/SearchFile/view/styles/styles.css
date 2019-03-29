@@ -1,5 +1,5 @@
-#evilButton {
-    background-color: red;
+#SearchButton {
+    background-color: LightBlue;
     border-style: outset;
     border-width: 2px;
     border-radius: 10px;
@@ -8,14 +8,15 @@
     min-width: 10em;
     padding: 6px;
 }
-#evilButton:pressed  {
+#SearchButton: pressed  {
     background-color: blue;
 }
 
-#evilButton:hover, #SearchButton:hover {
+#SearchButton: hover, {
      background-color: rgb(224, 255, 0);
 }
 
-#SearchButton {
+#SearchButton1 {
     background-color: blue;
 }
+

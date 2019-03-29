@@ -2,6 +2,8 @@ from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QMainWindow, QAction
 
 from src.com.jalasoft.SearchFile.view.criteria_search_view import CriteriaView
+#from src.com.jalasoft.SearchFile.view.present import Present
+
 
 class MainView(QMainWindow):
 
@@ -29,7 +31,7 @@ class MainView(QMainWindow):
         fileMenu.addAction(exitButton)
 
         aboutButton = QAction(QIcon("./images/search-icon-png-30.png"),"Members",self)
-        aboutButton.triggered.connect(self.close)
+#        aboutButton.triggered.connect(Present())
         aboutMenu.addAction(aboutButton)
 
         self.setCentralWidget(self.__getSearchView())
@@ -38,3 +40,9 @@ class MainView(QMainWindow):
     def __getSearchView(self):
         main_view = CriteriaView()
         return main_view
+
+
+
+
+
+
