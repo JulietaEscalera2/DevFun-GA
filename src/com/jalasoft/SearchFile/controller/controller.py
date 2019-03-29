@@ -39,5 +39,3 @@ class Controller:
                 row = row + 1
             col = col + 1
 
-
-

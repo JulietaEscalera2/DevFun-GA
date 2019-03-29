@@ -10,6 +10,16 @@ import os
 from datetime import datetime
 
 from src.com.jalasoft.SearchFile.model.file import File
+"""
+Search files
+This is the Model class.
+Author: Teresa Lopez
+Last edited: 3/27/2019
+"""
+import os
+from datetime import datetime
+
+from src.com.jalasoft.SearchFile.model.file import File
 
 class Model:
 
@@ -34,16 +44,16 @@ class Model:
                 if self.objectParameters.searchParameters['Size']!= '' and not int(file_object.get_size())<= int(self.objectParameters.searchParameters['Size']):
                     continue
                 print("start")
-                d = datetime.utcfromtimestamp(self.objectParameters.searchParameters['DateCreation'])
-                formated_date = d.strftime('%d %b %Y')
+                # d = datetime.utcfromtimestamp(self.objectParameters.searchParameters['DateCreation'])
+                # formated_date = d.strftime('%d %b %Y')
                 print("before")
-                print(formated_date)
+                # print(formated_date)
                 print("after")
-                print(file_object.get_creation_date())
-                if self.objectParameters.searchParameters['DateCreation']!= '' and file_object.get_creation_date()!= self.objectParameters.searchParameters['DateCreation']:
-                    continue
-                print(root)
-                result.append([root, file, file_object.get_file_type(), file_object.get_size(),file_object.get_creation_date()])
+                # print(file_object.get_creation_date())
+                # if self.objectParameters.searchParameters['DateCreation']!= '' and file_object.get_creation_date()!= self.objectParameters.searchParameters['DateCreation']:
+                #     continue
+                # print(root)
+                result.append([root, file, file_object.get_file_type(), file_object.get_size()])
         print(result)
         return result
 

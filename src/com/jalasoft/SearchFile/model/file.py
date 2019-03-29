@@ -1,12 +1,11 @@
 """
 Search files
-
 This is the Model class.
-
 Author: Teresa Lopez
 Last edited: 3/27/2019
 """
-#import os,time, win32api, win32con
+import os,time
+import win32api, win32con
 from datetime import datetime
 
 class File:
@@ -45,4 +44,3 @@ class File:
         path=os.path.join(self.__file_path__ , self.__file_name__)
         attribute = win32api.GetFileAttributes(path)
         return attribute & (win32con.FILE_ATTRIBUTE_READONLY | win32con.FILE_ATTRIBUTE_SYSTEM)
-

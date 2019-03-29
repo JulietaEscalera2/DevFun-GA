@@ -1,8 +1,3 @@
-import os
-
-# from src.com.jalasoft.SearchFile.controller.controller import Controller
-
-
 class ObjectParameters:
     def __init__(self):
         self.searchParameters = {}
@@ -15,19 +10,3 @@ class ObjectParameters:
         self.searchParameters['Size'] = get_file_size
         self.searchParameters['Hidden'] = isHidden
         self.searchParameters['ReadOnly'] = isReadOnly
-
-        # #to empty data
-        if self.searchParameters['Path'] == '':
-            self.searchParameters['Path'] = ''
-        # if self.searchParameters['Filename'] == '':
-        #     self.searchParameters['Filename'] = 'Null'
-        # if self.searchParameters['Extension'] == '':
-        #     self.searchParameters['Extension'] = 'Null'
-        # if self.searchParameters['Size'] == '':
-        #     self.searchParameters['Size'] = 'Null'
-
-    # def validator(self):
-    #     if os.path.isdir(self.searchParameters['Path']):
-    #         return self.searchParameters['Path']
-    #     if not os.path.isdir(self.searchParameters['Path']):
-    #         self.searchParameters['Path'] = 'Null'
