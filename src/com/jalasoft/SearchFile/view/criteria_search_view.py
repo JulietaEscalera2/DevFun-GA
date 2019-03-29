@@ -57,7 +57,7 @@ class CriteriaView(QWidget):
 
         self.table = QTableWidget()
         self.table.size()
-        self.table.setGridStyle()
+        #self.table.setGridStyle()
         self.table.setStyleSheet("font-size: 12px; color: Black;")
         self.table.setColumnCount(5)
         self.table.adjustSize()
@@ -81,8 +81,8 @@ class CriteriaView(QWidget):
 
         self.button_layout = QHBoxLayout()
         self.button_search = QPushButton("Search")
-        self.button_save = SearchButton()
-        self.button_save.push_button("Save criteria")
+        self.button_search.setObjectName("SearchButton")
+        self.button_save = SearchButton("Save criteria")
         button_clean = QPushButton("Clean search")
         self.button_layout.addWidget(self.button_search)
         self.button_layout.addWidget(self.button_save)
