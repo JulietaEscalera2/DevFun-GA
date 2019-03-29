@@ -2,13 +2,8 @@ import os
 # from src.com.jalasoft.SearchFile.utilities.keysparameters import ObjectParameters
 
 class Validator():
-    # path = 'C:\\Users'
-    # saludo = 'hola'
-    # if os.path.isdir(path):
-    #     print(path)
-    # if not os.path.isdir(saludo):
-    #     print('it is not a path')
 
+ #function to validate the criteria search got from vista
     def read_criteria(self):
         # file_path = ObjectParameters.searchParameters['path']
         if os.path.isdir(self.ObjectParameters.searchParameters['path']):
@@ -25,6 +20,14 @@ class Validator():
             return self.ObjectParameters.searchParameters['Filename']
         else:
             return f'filename doesnot accept special characters'
+
+# path = 'C:\\Users'
+    # saludo = 'hola'
+    # if os.path.isdir(path):
+    #     print(path)
+    # if not os.path.isdir(saludo):
+    #     print('it is not a path')
+
 
 # num = "exe"
 # if num.os.extsep():

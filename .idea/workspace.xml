@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1aaf2ff9-b693-452e-9b65-f8d1d97983c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_search_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_search_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/objectParameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/objectParameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/keysparameters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/test_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/test_validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/validator.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,15 +19,16 @@
     <SUITE FILE_PATH="coverage/DevFun_GA$main.coverage" NAME="main Coverage Results" MODIFIED="1553141662262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile" />
     <SUITE FILE_PATH="coverage/DevFun_GA$criteria_search_view.coverage" NAME="criteria_search_view Coverage Results" MODIFIED="1553574445862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view" />
     <SUITE FILE_PATH="coverage/DevFun_GA$convertorSize.coverage" NAME="convertorSize Coverage Results" MODIFIED="1553824938885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities" />
+    <SUITE FILE_PATH="coverage/DevFun_GA$Unittests_for_test_validator_ValidatorTest_test_fileName.coverage" NAME="Unittests for test_validator.ValidatorTest.test_fileName Coverage Results" MODIFIED="1553834518149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities" />
     <SUITE FILE_PATH="coverage/DevFun_GA$Unittests_in_test_validator_py.coverage" NAME="Unittests in test_validator.py Coverage Results" MODIFIED="1553664952876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities" />
     <SUITE FILE_PATH="coverage/DevFun_GA$validator__1_.coverage" NAME="validator (1) Coverage Results" MODIFIED="1553132467973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities" />
     <SUITE FILE_PATH="coverage/DevFun_GA$keysparameters.coverage" NAME="keysparameters Coverage Results" MODIFIED="1553574127215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities" />
-    <SUITE FILE_PATH="coverage/DevFun_GA$Unittests_for_test_validator_ValidatorTest.coverage" NAME="Unittests for test_validator.ValidatorTest Coverage Results" MODIFIED="1553664801542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities" />
     <SUITE FILE_PATH="coverage/DevFun_GA$validator.coverage" NAME="validator Coverage Results" MODIFIED="1553833280695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities" />
+    <SUITE FILE_PATH="coverage/DevFun_GA$Unittests_for_test_validator_ValidatorTest.coverage" NAME="Unittests for test_validator.ValidatorTest Coverage Results" MODIFIED="1553833764966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities" />
     <SUITE FILE_PATH="coverage/DevFun_GA$objectParameters.coverage" NAME="objectParameters Coverage Results" MODIFIED="1553750297188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller" />
     <SUITE FILE_PATH="coverage/DevFun_GA$model.coverage" NAME="model Coverage Results" MODIFIED="1553828207600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/model" />
     <SUITE FILE_PATH="coverage/DevFun_GA$getData.coverage" NAME="getData Coverage Results" MODIFIED="1552310661453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view" />
-    <SUITE FILE_PATH="coverage/DevFun_GA$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1553831949268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view" />
+    <SUITE FILE_PATH="coverage/DevFun_GA$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1553833648417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view" />
     <SUITE FILE_PATH="coverage/DevFun_GA$Unittests_for_test_validator_ValidatorTest_test_pathData.coverage" NAME="Unittests for test_validator.ValidatorTest.test_pathData Coverage Results" MODIFIED="1553664010317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities" />
     <SUITE FILE_PATH="coverage/DevFun_GA$controller.coverage" NAME="controller Coverage Results" MODIFIED="1553813790466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller" />
     <SUITE FILE_PATH="coverage/DevFun_GA$criteria_main_view.coverage" NAME="criteria_main_view Coverage Results" MODIFIED="1553140757878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view" />
@@ -47,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/objectParameters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
+            <state relative-caret-position="110">
+              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -56,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="25" selection-start-line="25" selection-end-line="26" />
+            <state relative-caret-position="263">
+              <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
               <folding>
                 <element signature="e#0#69#0" expanded="true" />
               </folding>
@@ -65,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/validator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="35">
+              <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -77,10 +82,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="132">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/test_validator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/model/model.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="226">
-              <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -128,13 +145,13 @@
         <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/main.py" />
         <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/main.py" />
         <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/keysparameters.py" />
-        <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/test_validator.py" />
-        <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/objectParameters.py" />
         <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/convertorSize.py" />
-        <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/controller.py" />
         <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/model/model.py" />
         <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_search_view.py" />
+        <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/controller.py" />
         <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/validator.py" />
+        <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/objectParameters.py" />
+        <option value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/test_validator.py" />
       </list>
     </option>
   </component>
@@ -237,7 +254,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../python-fundamentals" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -259,51 +276,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.validator">
-    <configuration name="controller" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DevFun-GA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/controller.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="convertorSize" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DevFun-GA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/convertorSize.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests for test_validator.ValidatorTest.test_fileName">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DevFun-GA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -370,13 +343,43 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for test_validator.ValidatorTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="DevFun-GA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_validator.ValidatorTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_validator.ValidatorTest.test_fileName" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="DevFun-GA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_validator.ValidatorTest.test_fileName&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.validator" />
+        <item itemvalue="Python tests.Unittests for test_validator.ValidatorTest.test_fileName" />
+        <item itemvalue="Python tests.Unittests for test_validator.ValidatorTest" />
         <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.validator" />
         <item itemvalue="Python.model" />
-        <item itemvalue="Python.convertorSize" />
-        <item itemvalue="Python.controller" />
       </list>
     </recent_temporary>
   </component>
@@ -410,7 +413,7 @@
       <workItem from="1553690664506" duration="1418000" />
       <workItem from="1553714202351" duration="221000" />
       <workItem from="1553741260719" duration="8082000" />
-      <workItem from="1553813641005" duration="14901000" />
+      <workItem from="1553813641005" duration="16567000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'develop' of https://github.com/JulietaEscalera2/DevFun-GA into controller/integration&#10;&#10;# Conflicts:&#10;#&#9;src/com/jalasoft/SearchFile/DB/db.py&#10;#&#9;src/com/jalasoft/SearchFile/controller/controller.py&#10;#&#9;src/com/jalasoft/SearchFile/main.py&#10;#&#9;src/com/jalasoft/SearchFile/view/productView.py&#10;#&#9;src/com/jalasoft/SearchFile/view/view.py">
       <created>1552955755429</created>
@@ -493,18 +496,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_validator_ValidatorTest_test_pathData - 2019.03.11 at 08h 36m 53s.xml">
-      <configuration name="Unittests for test_validator.ValidatorTest.test_pathData" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_validator_ValidatorTest - 2019.03.11 at 08h 37m 17s.xml">
-      <configuration name="Unittests for test_validator.ValidatorTest" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_validator_ValidatorTest - 2019.03.11 at 08h 37m 42s.xml">
-      <configuration name="Unittests for test_validator.ValidatorTest" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_validator_ValidatorTest_test_pathData - 2019.03.26 at 00h 18m 51s.xml">
-      <configuration name="Unittests for test_validator.ValidatorTest.test_pathData" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_test_validator_ValidatorTest_test_pathData - 2019.03.26 at 00h 21m 41s.xml">
       <configuration name="Unittests for test_validator.ValidatorTest.test_pathData" configurationId="tests" />
     </history-entry>
@@ -523,25 +514,38 @@
     <history-entry file="Unittests_in_test_validator_py - 2019.03.27 at 01h 35m 53s.xml">
       <configuration name="Unittests in test_validator.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_test_validator_ValidatorTest - 2019.03.29 at 00h 28m 58s.xml">
+      <configuration name="Unittests for test_validator.ValidatorTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_validator_ValidatorTest - 2019.03.29 at 00h 29m 25s.xml">
+      <configuration name="Unittests for test_validator.ValidatorTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_validator_ValidatorTest_test_fileName - 2019.03.29 at 00h 41m 19s.xml">
+      <configuration name="Unittests for test_validator.ValidatorTest.test_fileName" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_validator_ValidatorTest_test_fileName - 2019.03.29 at 00h 41m 59s.xml">
+      <configuration name="Unittests for test_validator.ValidatorTest.test_fileName" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119066000" />
+    <option name="totallyTimeSpent" value="120732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19591528" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19591528" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49755502" weight="0.38952535" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49755502" weight="0.59247136" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40425533" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.39116204" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.39116204" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502445" side_tool="true" weight="0.20156775" />
       <window_info anchor="bottom" id="Terminal" order="11" />
@@ -649,23 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/test_validator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/keysparameters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/criteria_main_view.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-264">
@@ -696,19 +683,9 @@
     <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/model/model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
-          <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -723,17 +700,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/objectParameters.py">
+    <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/view/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        <state relative-caret-position="132">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/keysparameters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="25" selection-start-line="25" selection-end-line="26" />
+        <state relative-caret-position="263">
+          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
           <folding>
             <element signature="e#0#69#0" expanded="true" />
           </folding>
@@ -742,8 +729,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/validator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="35">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/controller/objectParameters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jalasoft/SearchFile/utilities/test_validator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,10 +1,9 @@
-from src.com.jalasoft.SearchFile.utilities.convertorSize import ConvertorSize
-
 
 class ObjectParameters:
     def __init__(self):
         self.searchParameters = {}
 
+    # function to extract the values of GUI
     def data_to_file(self, get_path_file, get_file_name, get_extension, get_date_creation, get_file_size, isHidden,isReadOnly):
         self.searchParameters['Path'] = get_path_file
         self.searchParameters['Filename'] = get_file_name
