@@ -1,4 +1,3 @@
-
 class ObjectParameters:
     def __init__(self):
         self.searchParameters = {}
@@ -13,4 +12,3 @@ class ObjectParameters:
         self.searchParameters['Size'] = get_file_size
         self.searchParameters['Hidden'] = isHidden
         self.searchParameters['ReadOnly'] = isReadOnly
-
