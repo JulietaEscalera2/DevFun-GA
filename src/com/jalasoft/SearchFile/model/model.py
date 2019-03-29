@@ -43,6 +43,7 @@ class Model:
                     continue
                 if self.objectParameters.searchParameters['Size']!= '' and not int(file_object.get_size())<= int(self.objectParameters.searchParameters['Size']):
                     continue
+
                 print("start")
                 # d = datetime.utcfromtimestamp(self.objectParameters.searchParameters['DateCreation'])
                 # formated_date = d.strftime('%d %b %Y')
@@ -100,3 +101,4 @@ class Model:
                     result.append([root, file, file_size, file_time, file_type])
 
         return result
+
