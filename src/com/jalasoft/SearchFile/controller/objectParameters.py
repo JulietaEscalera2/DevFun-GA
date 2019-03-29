@@ -1,3 +1,6 @@
+from src.com.jalasoft.SearchFile.utilities.convertorSize import ConvertorSize
+
+
 class ObjectParameters:
     def __init__(self):
         self.searchParameters = {}
