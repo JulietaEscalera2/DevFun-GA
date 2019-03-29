@@ -1,6 +1,4 @@
 import os
-
-
 from src.com.jalasoft.SearchFile.model.file import File
 
 class Model:
@@ -27,8 +25,8 @@ class Model:
                     continue
                 # print(self.objectParameters.searchParameters['DateCreation'])
                 # print(file_object.get_creation_date())
-                # # if self.objectParameters.searchParameters['DateCreation']!= '' and file_object.get_creation_date()!= self.objectParameters.searchParameters['DateCreation']:
-                # #     continue
+                # if self.objectParameters.searchParameters['DateCreation']!= '' and file_object.get_creation_date()!= self.objectParameters.searchParameters['DateCreation']:
+                #     continue
                 print(root)
                 print(file)
                 result.append([root, file, file_object.get_file_type(), file_object.get_size(),file_object.get_creation_date()])

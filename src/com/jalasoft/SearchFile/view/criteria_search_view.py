@@ -79,6 +79,7 @@ class CriteriaView(QWidget):
 
     def combo_size(self):
         self.size = QComboBox()
+        self.size.addItem("Bytes")
         self.size.addItem("Kb")
         self.size.addItem("Mb")
         self.size.addItem("Gb")
@@ -99,16 +100,17 @@ class CriteriaView(QWidget):
         return self.pathText.text()
 
     def get_date_creation(self):
-       return self.createDate
-
-    def get_file_size(self):
-        return self.size_line.text()
+        return self.createDate
+        # return self.createDate.strftime('%b%d%Y')
 
     def get_search_button(self):
         return self.button_search
 
     def get_size_combo(self):
         return self.size.text()
+
+    def get_file_size(self):
+        return self.size_line.text()
 
     def get_isHidden(self):
         if self.hidden.isChecked() == True:
@@ -121,4 +123,3 @@ class CriteriaView(QWidget):
             return True
         else:
             return False
-
