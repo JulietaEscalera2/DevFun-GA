@@ -15,18 +15,23 @@ class MainView(QMainWindow):
         self.show()
 
     def __initComponent(self):
-        self.resize(1500, 1000)
+        self.resize(1500, 500)
+        self.setStyleSheet("background-color: LightGray;")
+        self.setWindowIcon(QIcon("./images/search-icon-png-30.png"))
         menuBar = self.menuBar()
         fileMenu = menuBar.addMenu('File')
-        searchMenu = menuBar.addMenu('Search')
-        toolsMenu = menuBar.addMenu('Tools')
-        helpMenu = menuBar.addMenu('Help')
+        aboutMenu = menuBar.addMenu('About Us...')
 
-        exitButton = QAction(QIcon('./src/com/jalasoft/SearchFile/view/images/file.png'), 'Exit', self)
+        exitButton = QAction(QIcon('./images/back.png'), 'Exit', self)
         exitButton.setShortcut('Ctrl+Q')
         exitButton.setStatusTip('Exit application')
         exitButton.triggered.connect(self.close)
         fileMenu.addAction(exitButton)
+
+        aboutButton = QAction(QIcon("./images/search-icon-png-30.png"),"Members",self)
+        aboutButton.triggered.connect(self.close)
+        aboutMenu.addAction(aboutButton)
+
         self.setCentralWidget(self.__getSearchView())
         self.__controller.add_action_listener()
 

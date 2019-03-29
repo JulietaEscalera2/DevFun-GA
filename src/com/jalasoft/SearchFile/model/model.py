@@ -1,6 +1,15 @@
+"""
+Search files
+
+This is the Model class.
+
+Author: Teresa Lopez
+Last edited: 3/27/2019
+"""
 import os
+from datetime import datetime
+
 from src.com.jalasoft.SearchFile.model.file import File
-from src.com.jalasoft.SearchFile.controller.objectParameters import ObjectParameters
 
 class Model:
 
@@ -10,24 +19,32 @@ class Model:
     def search_criteria(self, objectParameters):
         self.objectParameters= objectParameters
         result = []
-        print(self.objectParameters.searchParameters['Path'])
-        for root, dir, files in os.walk(self.objectParameters.searchParameters['Path']):
+        for root, dirs, files in os.walk(self.objectParameters.searchParameters['Path']):
 
             for file in files:
                 file_object = File(file, root)
-
-                if self.objectParameters.searchParameters['Filename']!= 'Null' and self.objectParameters.searchParameters['Filename'] not in file.lower():
+                if self.objectParameters.searchParameters['Hidden'] and int(file_object.is_hidden())!=2:
                     continue
-
-                if self.objectParameters.searchParameters['Extension']!= 'Null' and not file.endswith(self.objectParameters.searchParameters['Extension']):
+                if self.objectParameters.searchParameters['ReadOnly'] and int(file_object.is_readOnly())!=1:
                     continue
-
-                #if self.objectParameters.searchParameters['Size']!= 'Null' and str(file_object.get_size_kb())!= str(self.objectParameters.searchParameters['Size']):
-                #    continue
-                #if self.objectParameters.searchParameters['DateCreation']!= 'Null' and file_object.get_creation_date()!= self.objectParameters.searchParameters['DateCreation']:
-                #    continue
-
-                result.append([root, file, file_object.get_file_type(), file_object.get_size_kb()])
+                if self.objectParameters.searchParameters['Filename']!= '' and self.objectParameters.searchParameters['Filename'] not in file.lower():
+                    continue
+                if self.objectParameters.searchParameters['Extension']!= '' and not file.endswith(self.objectParameters.searchParameters['Extension']):
+                    continue
+                if self.objectParameters.searchParameters['Size']!= '' and not int(file_object.get_size())<= int(self.objectParameters.searchParameters['Size']):
+                    continue
+                print("start")
+                d = datetime.utcfromtimestamp(self.objectParameters.searchParameters['DateCreation'])
+                formated_date = d.strftime('%d %b %Y')
+                print("before")
+                print(formated_date)
+                print("after")
+                print(file_object.get_creation_date())
+                if self.objectParameters.searchParameters['DateCreation']!= '' and file_object.get_creation_date()!= self.objectParameters.searchParameters['DateCreation']:
+                    continue
+                print(root)
+                result.append([root, file, file_object.get_file_type(), file_object.get_size(),file_object.get_creation_date()])
+        print(result)
         return result
 
 
@@ -53,7 +70,7 @@ class Model:
             for file in files:
                 if file.endswith(self.objectParameters.searchParameters['Extension']):
                     file_object = File(file, root)
-                    file_size = file_object.get_size_kb()
+                    file_size = file_object.get_size()
                     file_time = file_object.get_creation_date()
                     file_type = file_object.get_file_type()
                     result.append([root, file, file_size, file_time, file_type])
@@ -73,9 +90,3 @@ class Model:
                     result.append([root, file, file_size, file_time, file_type])
 
         return result
-
-# to run only Model
-# model=Model()
-# parameters= ObjectParameters()
-# result= model.search_criteria(parameters)
-# print(result)
