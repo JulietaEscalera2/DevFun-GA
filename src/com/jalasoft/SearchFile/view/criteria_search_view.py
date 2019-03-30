@@ -62,6 +62,8 @@ class CriteriaView(QWidget):
 
         self.table = TableTemplate(["Path",u"File Name",u"Ext",u"Size","Create Date"],"LightBlue")
         self.table.size()
+        self.table.resizeColumnsToContents()
+        self.table.setStyleSheet("background-color: white;")
         self.table.setColumnCount(5)
         return self.table
 
