@@ -1,0 +1,3 @@
+- Cuando el cliente no tienen suficiente credito el pago es confirmado en nuestra base de datos
+- BAse de datos necesitan a;adir Updated At nad createdAt, eliminar tabla que no es used 
+-paypal error se muestra si el user merchant is logged in the browser
