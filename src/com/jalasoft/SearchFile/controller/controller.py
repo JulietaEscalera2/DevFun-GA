@@ -24,14 +24,14 @@ class Controller:
         __file_name = self.central_widget.get_file_name()
         __file_extention = self.central_widget.get_file_extention()
         __file_size = self.central_widget.get_file_size()
-        __file_date = self.central_widget.get_date_creation()
+       # __file_date = self.central_widget.get_date_creation()
         __file_hidden = self.central_widget.get_isHidden()
         __file_readOnly = self.central_widget.get_isReadOnly()
 
 
         #create criteria
         object_criteria = ObjectParameters()
-        object_criteria.data_to_file(__path, __file_name, __file_extention, __file_date, __file_size,__file_hidden,__file_readOnly)
+        object_criteria.data_to_file(__path, __file_name, __file_extention, __file_size,__file_hidden,__file_readOnly)
         resultList = self.model.search_criteria(object_criteria)
         self.fill_table_view(resultList)
 

@@ -113,7 +113,7 @@ class CriteriaView(QWidget):
         return self.extText.text()
 
     def get_path(self):
-        return self.size_line.text()
+        return self.pathText.text()
 
     def get_search_button(self):
         return self.button_search
