@@ -1,8 +1,11 @@
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QMainWindow, QAction
+"""
+This Class load the main window of the project
+"""
 
 from src.com.jalasoft.SearchFile.view.criteria_search_view import CriteriaView
-#from src.com.jalasoft.SearchFile.view.present import Present
+
 
 
 class MainView(QMainWindow):
@@ -21,6 +24,7 @@ class MainView(QMainWindow):
         self.setStyleSheet("background-color: LightGray;")
         self.setWindowIcon(QIcon("./images/search-icon-png-30.png"))
         menuBar = self.menuBar()
+        menuBar.setStyleSheet("background-color: white;")
         fileMenu = menuBar.addMenu('File')
         aboutMenu = menuBar.addMenu('About Us...')
 
@@ -30,8 +34,7 @@ class MainView(QMainWindow):
         exitButton.triggered.connect(self.close)
         fileMenu.addAction(exitButton)
 
-        aboutButton = QAction(QIcon("./images/search-icon-png-30.png"),"Members",self)
-#        aboutButton.triggered.connect(Present())
+        aboutButton = QAction(QIcon("./images/search-icon-png-30.png"),"Members: Teresa, Pady, Julieta",self)
         aboutMenu.addAction(aboutButton)
 
         self.setCentralWidget(self.__getSearchView())

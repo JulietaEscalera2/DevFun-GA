@@ -67,9 +67,9 @@ class Model:
                 if self.objectParameters.searchParameters['Filename'] in file.lower():
                     file_object = File(file,root)
                     file_size = file_object.get_size_kb()
-                    file_time = file_object.get_creation_date()
+                    #file_time = file_object.get_creation_date()
                     file_type = file_object.get_file_type()
-                    result.append([root, file, file_size, file_time,file_type])
+                    result.append([root, file, file_size,file_type])
 
         return result
 
@@ -82,9 +82,9 @@ class Model:
                 if file.endswith(self.objectParameters.searchParameters['Extension']):
                     file_object = File(file, root)
                     file_size = file_object.get_size()
-                    file_time = file_object.get_creation_date()
+                    #file_time = file_object.get_creation_date()
                     file_type = file_object.get_file_type()
-                    result.append([root, file, file_size, file_time, file_type])
+                    result.append([root, file, file_size, file_type])
 
         return result
 
@@ -96,9 +96,9 @@ class Model:
                 file_object = File(file, root)
                 if os.stat(file_object.get_file_in_path()).st_size == self.objectParameters.searchParameters['Size']:
                     file_size = file_object.get_size_kb()
-                    file_time = file_object.get_creation_date()
+                    #file_time = file_object.get_creation_date()
                     file_type = file_object.get_file_type()
-                    result.append([root, file, file_size, file_time, file_type])
+                    result.append([root, file, file_size, file_type])
 
         return result
 

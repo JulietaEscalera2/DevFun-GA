@@ -19,12 +19,12 @@ class File:
     def get_size(self):
         return os.path.getsize(os.path.join(self.__file_path__ , self.__file_name__))
     # this return the creation date of the file
-    def get_creation_date(self):
-        file_time = os.path.getmtime(os.path.join(self.__file_path__ , self.__file_name__))
-        d = datetime.utcfromtimestamp(file_time)
-        formated_date = d.strftime('%d %b %Y')
-        return formated_date
-        # return time.ctime(file_time)
+    # def get_creation_date(self):
+    #     file_time = os.path.getmtime(os.path.join(self.__file_path__ , self.__file_name__))
+    #     d = datetime.utcfromtimestamp(file_time)
+    #     formated_date = d.strftime('%d %b %Y')
+    #     return formated_date
+    #     # return time.ctime(file_time)
 
     # this return the type of the file
     def get_file_type(self):

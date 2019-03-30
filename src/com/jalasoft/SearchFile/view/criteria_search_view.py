@@ -2,7 +2,9 @@ from PyQt5.QtWidgets import QWidget, QPushButton, QHBoxLayout, QFormLayout, QLab
     QLineEdit, QTableWidget, QVBoxLayout, QCheckBox, QSpacerItem, QSizePolicy, QDateEdit, QComboBox, QGroupBox
 from src.com.jalasoft.SearchFile.view.table_tamplate import TableTemplate
 
-
+"""
+This class load criteria form, checkbox, combobox and buttons with styles
+"""
 
 class CriteriaView(QWidget):
 
@@ -113,7 +115,7 @@ class CriteriaView(QWidget):
         return self.extText.text()
 
     def get_path(self):
-        return self.size_line.text()
+        return self.pathText.text()
 
     def get_search_button(self):
         return self.button_search
