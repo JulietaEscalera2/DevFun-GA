@@ -24,7 +24,6 @@ class Controller:
         __file_name = self.central_widget.get_file_name()
         __file_extention = self.central_widget.get_file_extention()
         __file_size = self.central_widget.get_file_size()
-       # __file_date = self.central_widget.get_date_creation()
         __file_hidden = self.central_widget.get_isHidden()
         __file_readOnly = self.central_widget.get_isReadOnly()
 

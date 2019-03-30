@@ -2,7 +2,9 @@ from PyQt5.QtWidgets import QWidget, QPushButton, QHBoxLayout, QFormLayout, QLab
     QLineEdit, QTableWidget, QVBoxLayout, QCheckBox, QSpacerItem, QSizePolicy, QDateEdit, QComboBox, QGroupBox
 from src.com.jalasoft.SearchFile.view.table_tamplate import TableTemplate
 
-
+"""
+This class load criteria form, checkbox, combobox and buttons with styles
+"""
 
 class CriteriaView(QWidget):
 
